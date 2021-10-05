@@ -1,0 +1,857 @@
+.breadcrumbs__wrap--mt-0 {
+    margin-top: 0 !important;
+}
+
+.cabinet {
+    margin-top: 30px;
+    padding-top: 29px;
+    background-color: #eceff6;
+    &__title {
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #19181f;
+    }
+    &__inner {
+        @include flex;
+        @include j-c;
+        margin-top: 29px;
+    }
+    & aside {
+        width: 256px;
+        margin-right: 24px;
+        flex-shrink: 0;
+    }
+    & main {
+        flex-grow: 1;
+    }
+    &__menu {
+        background-color: #ffffff;
+        padding-top: 33px;
+        &-mob {
+            display: none;
+        }
+        &-top {
+            padding-left: 40px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 24px;
+        }
+        &-item {
+            height: 35px;
+            @include flex;
+            @include al-i(center);
+            padding-left: 41px;
+            font-size: 14px;
+            line-height: 34px;
+            font-weight: 400;
+            color: #004b9b;
+            &:hover {
+                color: #fff;
+                background-color: #004b9b;
+            }
+            & span {
+                width: 20px;
+                height: 20px;
+                margin-left: 15px;
+                border-radius: 50%;
+                @include flex;
+                @include al-i(center);
+                justify-content: center;
+                font-size: 9px;
+                line-height: 38px;
+                font-weight: 700;
+                color: #ffffff;
+            }
+        }
+        &-item--active {
+            font-weight: 600;
+            color: #2c2c2c;
+            border-left: 3px solid #02519d;
+            pointer-events: none;
+            padding-left: 38px;
+        }
+        &-item--favorite {
+            & span {
+                background-color: #fb0000;
+            }
+        }
+        &-item--history {
+            & span {
+                background-color: #004b9b;
+            }
+        }
+        &-exit {
+            margin-top: 47px;
+            height: 68px;
+            border-top: 1px solid #ececec;
+            @include flex;
+            @include al-i(center);
+            padding-left: 42px;
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #151515;
+            & svg {
+                width: 13px;
+                height: 15px;
+                margin-right: 14px;
+            }
+            & .cls-1 {
+                fill: #191919;
+            }
+            &:hover {
+                & span {
+                    color: #fb0000;
+                }
+                & .cls-1 {
+                    fill: #fb0000;
+                }
+            }
+        }
+    }
+}
+
+.cabinet-info {
+    background-color: #ffffff;
+    padding: 34px 58px 29px;
+    @include flex;
+    @include j-c;
+    @include al-i(center);
+    &__left {
+        padding-right: 54px;
+        border-right: 1px solid #ececec;
+    }
+    &__right {
+        @include flex;
+        @include j-c;
+        flex-grow: 1;
+        padding-left: 40px;
+    }
+    &__name {
+        font-weight: 600;
+        color: #1a1a1a;
+        font-size: 20px;
+        line-height: 26px;
+        & span {
+            font-size: 24px;
+        }
+    }
+    &__date {
+        margin-top: 35px;
+        font-size: 12px;
+        font-weight: 500;
+        color: #6f6f6f;
+        & strong {
+            color: #1a1a1a;
+        }
+    }
+    &__mail,
+    &__phone {
+        color: #1a1a1a;
+        & span {
+            font-size: 12px;
+            display: block;
+            font-weight: 500;
+        }
+        & strong {
+            margin-top: 9px;
+            font-size: 16px;
+            font-weight: 600;
+            display: block;
+        }
+    }
+    &__phone {
+        margin-top: 16px;
+    }
+    &__edit {
+        width: 180px;
+        height: 41px;
+        background-color: #ffffff;
+        border: 1px solid #004b9b;
+        border-radius: 2px;
+        font-size: 13px;
+        font-weight: 400;
+        color: #004b9b;
+        &:hover {
+            background-color: #014e9a;
+            color: #fff;
+        }
+    }
+    &__change-pas {
+        width: 180px;
+        height: 41px;
+        background-color: #eceff6;
+        border-radius: 2px;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #00264f;
+        margin-top: 13px;
+        &:hover {
+            background-color: #7e8eb4;
+            color: #fff;
+        }
+    }
+}
+
+.cabinet-sale {
+    padding: 25px 60px;
+    padding-right: 42px;
+    background-color: #ffffff;
+    @include flex;
+    @include j-c;
+    @include al-i(center);
+    margin-top: 11px;
+    &__left {
+        @include flex;
+        @include al-i(center);
+        font-size: 20px;
+        font-weight: 600;
+        color: #1a1a1a;
+        & br {
+            display: none;
+        }
+        & div {
+            white-space: nowrap;
+        }
+        & span {
+            color: #fb0000;
+        }
+        & svg {
+            width: 35px;
+            height: 36px;
+            margin-right: 19px;
+        }
+        & .cls-1 {
+            fill: #fb0000;
+        }
+    }
+    &__right {
+        @include flex;
+        @include al-i(center);
+    }
+    &__percent {
+        flex-shrink: 0;
+        margin: 0 25px;
+        @include flex;
+        justify-content: center;
+        @include al-i(center);
+        width: 61px;
+        height: 40px;
+        background-color: #fb0000;
+        border-radius: 1px;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 600;
+        color: #ffffff;
+        & i {
+            font-size: 16px;
+        }
+    }
+    &__desc {
+        font-size: 11px;
+        line-height: 15px;
+        font-weight: 400;
+        color: #000000;
+    }
+}
+
+.cabinet-history {
+    padding: 25px 0 62px;
+    background-color: #fff;
+    margin-top: 11px;
+    background-image: url(../images/wave.png);
+    background-repeat: repeat-x;
+    background-size: auto 35px;
+    background-position: left bottom;
+    margin-bottom: 60px;
+    &__top {
+        padding: 0 60px;
+        @include flex;
+        @include j-c;
+        @include al-i(center);
+        &-left {
+            font-size: 24px;
+            font-weight: 500;
+            color: #1a1a1a;
+            @include flex;
+            @include al-i(center);
+            & span {
+                width: 20px;
+                height: 20px;
+                background-color: #004b9b;
+                margin-left: 17px;
+                @include flex;
+                justify-content: center;
+                @include al-i(center);
+                font-size: 9px;
+                font-weight: 700;
+                color: #ffffff;
+                border-radius: 50%;
+            }
+        }
+    }
+    &__all {
+        width: 180px;
+        height: 41px;
+        background-color: #004b9b;
+        border-radius: 2px;
+        font-size: 13px;
+        font-weight: 400;
+        color: #ffffff;
+        @include flex;
+        justify-content: center;
+        @include al-i(center);
+        &:hover {
+            background-color: #006adc;
+            color: #fff;
+        }
+    }
+    &__table-head {
+        margin-top: 20px;
+        font-size: 10px;
+        font-weight: 500;
+        color: #878e92;
+        @include flex;
+        @include al-i(center);
+        padding: 19px 60px;
+        border-top: 1px solid #ececec;
+        & span {
+            &:nth-child(1) {
+                width: 140px;
+            }
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4) {
+                width: 145px;
+            }
+            &:nth-child(5) {
+                width: 95px;
+            }
+        }
+    }
+    &__item {
+        height: 60px;
+        border-top: 1px solid #ececec;
+        border-bottom: 1px solid #ececec;
+        @include flex;
+        @include al-i(center);
+        padding: 0 60px;
+        position: relative;
+        &:hover {
+            &:after {
+                content: '';
+                position: absolute;
+                z-index: 1;
+                width: calc(100% - 4px);
+                height: calc(100% - 4px);
+                top: 2px;
+                left: 2px;
+                background-color: #eceff6;
+            }
+            & .cabinet-history__item-num {
+                color: #002b59;
+            }
+        }
+        &-num {
+            position: relative;
+            z-index: 2;
+            width: 140px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #004b9b;
+        }
+        &-date {
+            position: relative;
+            z-index: 2;
+            width: 145px;
+            font-size: 14px;
+            font-weight: 400;
+            color: #2c2c2c;
+        }
+        &-price {
+            position: relative;
+            z-index: 2;
+            font-size: 14px;
+            width: 145px;
+            font-weight: 400;
+            color: #242424;
+        }
+        &-paystatus {
+            position: relative;
+            z-index: 2;
+            font-size: 14px;
+            font-weight: 500;
+            color: #2c2c2c;
+            width: 145px;
+            & span:first-child {
+                display: none;
+            }
+        }
+        &-orderstatus {
+            position: relative;
+            z-index: 2;
+            width: 95px;
+            font-size: 14px;
+            font-weight: 500;
+            & span:first-child {
+                display: none;
+            }
+        }
+        &-orderstatus--shipping {
+            color: #df44a3;
+        }
+        &-orderstatus--accept {
+            color: #eb702c;
+        }
+        &-orderstatus--cancel {
+            color: #fc2b2c;
+        }
+        &-orderstatus--ready {
+            color: #004b9b;
+        }
+        &-orderstatus--new {
+            color: #588c2a;
+        }
+        &-all {
+            margin-left: 60px;
+            margin-top: 25px;
+            display: flex;
+            align-items: center;
+            & svg {
+                width: 14px;
+                height: 14px;
+                margin-right: 12px;
+            }
+            & .cls-1 {
+                fill: #004a96;
+            }
+            & span {
+                padding-bottom: 4px;
+                font-size: 14px;
+                font-weight: 500;
+                color: #004b9b;
+                border-bottom: 1px dashed #004da0;
+            }
+            &:hover {
+                & span {
+                    color: #006adc
+                }
+                & .cls-1 {
+                    fill: #006adc;
+                }
+            }
+        }
+    }
+    &__item--hide {
+        display: none;
+    }
+}
+
+.cabinet-history--mt0 {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 1150px) {
+    .cabinet-info {
+        padding-left: 30px;
+        padding-right: 30px;
+        &__left {
+            padding-right: 30px;
+        }
+        &__right {
+            padding-left: 15px;
+        }
+    }
+    .cabinet-sale {
+        padding-left: 30px;
+        padding-right: 30px;
+        &__left {
+            font-size: 18px;
+            & svg {
+                margin-right: 10px;
+            }
+        }
+        &__percent {
+            margin: 0 12px;
+            font-size: 18px;
+            width: 45px;
+            height: 30px;
+            & i {
+                font-size: 14px;
+            }
+        }
+    }
+    .cabinet-history {
+        &__top {
+            padding: 0 30px;
+        }
+        &__table {
+            &-head {
+                padding-left: 30px;
+                padding-right: 30px;
+                & span {
+                    &:first-child {
+                        width: 95px;
+                    }
+                    &:nth-child(2) {
+                        width: 145px;
+                    }
+                    &:nth-child(3) {
+                        width: 110px;
+                    }
+                    &:nth-child(4) {
+                        width: 130px;
+                    }
+                }
+            }
+        }
+        &__item {
+            padding: 0 30px;
+            &-all {
+                margin-left: 30px;
+            }
+            &-num {
+                width: 95px;
+            }
+            &-date {
+                width: 145px;
+            }
+            &-price {
+                width: 110px;
+            }
+            &-paystatus {
+                width: 130px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .cabinet {
+        &__inner {
+            display: block;
+        }
+        & aside {
+            width: 100%;
+        }
+        & main {
+            margin-top: 11px;
+        }
+        &__menu {
+            display: none;
+            margin-top: 3px;
+            padding-top: 0;
+            &-top {
+                display: none;
+            }
+            &-mob {
+                cursor: pointer;
+                @include flex;
+                @include j-c;
+                @include al-i(center);
+                &-exit {
+                    width: 85px;
+                    height: 60px;
+                    background-color: #ffffff;
+                    font-size: 9px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    color: #151515;
+                    @include flex;
+                    @include al-i(center);
+                    padding: 0 14px;
+                    & svg {
+                        width: 10px;
+                        height: 11px;
+                        margin-right: 11px;
+                    }
+                    & .cls-1 {
+                        fill: #191919;
+                    }
+                }
+            }
+            &-open {
+                @include flex;
+                @include al-i(center);
+                padding: 0 17px;
+                height: 60px;
+                background-color: #fff;
+                flex-grow: 1;
+                margin-right: 3px;
+                & svg {
+                    width: 12px;
+                    height: 14px;
+                    margin-right: 10px;
+                }
+                & .cls-1 {
+                    fill: #004b9b;
+                }
+                & span {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #004b9b;
+                }
+                & i {
+                    font-size: 8px;
+                    margin-left: auto;
+                    font-weight: 400;
+                    color: #004b9b;
+                }
+            }
+            &-open--active {
+                & i {
+                    transform: rotate(180deg);
+                }
+            }
+            &-exit {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cabinet {
+        margin-top: 18px;
+        padding-top: 19px;
+        &__title {
+            font-size: 20px;
+        }
+        &__inner {
+            margin-top: 23px;
+        }
+        &__menu {
+            padding-top: 8px;
+            &-open {
+                height: 41px;
+            }
+            &-mob-exit {
+                height: 41px;
+            }
+            &-item {
+                height: 26px;
+                padding-left: 26px;
+                font-size: 14px;
+                &:not(:last-child) {
+                    margin-bottom: 8px;
+                }
+            }
+            &-item--active {
+                padding-left: 23px;
+            }
+            &-exit {
+                height: 52px;
+            }
+        }
+    }
+    .cabinet-info {
+        padding-left: 24px;
+        padding-right: 24px;
+        &__left {
+            padding-right: 30px;
+        }
+        &__right {
+            padding-left: 30px;
+        }
+        &__name {
+            font-size: 16px;
+            & span {
+                font-size: 20px;
+            }
+        }
+        &__date {
+            font-size: 10px;
+            margin-top: 16px;
+        }
+        &__mail,
+        &__phone {
+            & span {
+                font-size: 10px;
+            }
+            & strong {
+                font-size: 14px;
+            }
+        }
+        &__phone {
+            margin-top: 15px;
+        }
+        &__edit,
+        &__change-pas {
+            width: 130px;
+            height: 30px;
+            font-size: 10px;
+        }
+    }
+    .cabinet-sale {
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-top: 6px;
+        & svg {
+            width: 34px;
+            height: 34px;
+        }
+        &__left {
+            font-size: 17px;
+            line-height: 18px;
+        }
+        &__desc {
+            font-size: 10px;
+            line-height: 12px;
+        }
+    }
+    .cabinet-history {
+        margin-top: 6px;
+        &__top {
+            padding-left: 24px;
+            padding-right: 24px;
+            &-left {
+                font-size: 18px;
+                & span {
+                    margin-left: 12px;
+                }
+            }
+        }
+        &__all {
+            width: 163px;
+            height: 35px;
+            font-size: 12px;
+        }
+        &__table {
+            &-head {
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+        }
+        &__item {
+            padding: 0 24px;
+            &-all {
+                margin-left: 24px;
+            }
+            &-date {
+                font-size: 12px;
+            }
+        }
+    }
+    .cabinet-history--mt0 {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .cabinet-info {
+        @include wrap;
+        padding: 24px;
+        padding-top: 20px;
+        &__left {
+            width: 100%;
+            padding-right: 0;
+            border-right: none;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ececec;
+        }
+        &__right {
+            padding-left: 0;
+            padding-top: 20px;
+            display: block;
+        }
+        &__buttons {
+            margin-top: 19px;
+            @include flex;
+            @include al-i(center);
+        }
+        &__edit {
+            width: 130px;
+            height: 30px;
+        }
+        &__change-pas {
+            width: 107px;
+            height: 30px;
+            margin-top: 0;
+            margin-left: 5px;
+        }
+    }
+    .cabinet-sale {
+        padding: 24px;
+        @include wrap;
+        &__left {
+            width: 100%;
+            & br {
+                display: block;
+            }
+            & div {
+                white-space: unset;
+            }
+        }
+        &__right {
+            align-items: flex-start;
+            margin-top: 21px;
+        }
+        &__percent {
+            width: 61px;
+            height: 40px;
+            margin-left: 0;
+            margin-right: 17px;
+            font-size: 20px;
+            & i {
+                font-size: 16px;
+            }
+        }
+    }
+    .cabinet-history {
+        background-size: auto 21px;
+        padding-bottom: 40px;
+        margin-bottom: 26px;
+        &__top {
+            @include wrap;
+            margin-bottom: 24px;
+            &-left {
+                width: 100%;
+                margin-bottom: 12px;
+            }
+        }
+        &__table-head {
+            display: none;
+        }
+        &__item {
+            height: 105px;
+            @include wrap;
+            &-num {
+                width: 60px;
+            }
+            &-date {
+                width: 115px;
+            }
+            &-price {
+                width: 65px;
+            }
+            &-paystatus {
+                width: 110px;
+                & span:first-child {
+                    font-size: 8px;
+                    font-weight: 400;
+                    color: #676767;
+                    margin-bottom: 9px;
+                    display: block;
+                }
+            }
+            &-orderstatus {
+                width: calc(100% - 110px);
+                & span:first-child {
+                    font-size: 8px;
+                    font-weight: 400;
+                    color: #676767;
+                    margin-bottom: 9px;
+                    display: block;
+                }
+            }
+            &-all {
+                & span {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/nouislider.min.css">
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel='stylesheet' href='css/jquery.mCustomScrollbar.css' />
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">  
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/6.4.0/adapter.min.js"></script>
+  <title>Корзина</title>
+</head>
+<body>
+	
+	<div class="wrapper">
+		<div class="content">
+			<header id="header" class='header'>
+				<div class="header__top">
+					<div class='container'>
+						<div class="header__top-inner">
+							<button class="header__top-close">
+							<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.1 13.11"><defs><style>.cls-1{fill:#fff;}</style></defs><path class="cls-1" d="M297.1,420.82l-.23-.21-5.09-5.1a.73.73,0,0,1-.17-.88.72.72,0,0,1,1.15-.16l2.28,2.28L298,419.7l.09.09.12-.12,5.16-5.16a.72.72,0,1,1,1.09.93l-.11.12-5.13,5.13-.14.14.16.11,5.15,5.16a.71.71,0,0,1,.23.72.68.68,0,0,1-.55.52.7.7,0,0,1-.68-.22l-2-2-3.18-3.18a.84.84,0,0,0-.13-.12.44.44,0,0,1-.08.15l-5.17,5.16a.71.71,0,1,1-1.08-.93l.12-.12,5.11-5.12A1.42,1.42,0,0,1,297.1,420.82Z" transform="translate(-291.53 -414.25)"/></svg>
+							</button>
+						<nav class="header__nav">
+							<ul class="header__nav-list">
+								<li class="header__nav-item"><a href="">Оплата</a> </li>
+								<li class="header__nav-item"><a href="">Доставка</a> </li>
+								<li class="header__nav-item"><a href="">О компании</a> </li>
+								<li class="header__nav-item header__nav-item--active"><a href="">Блог</a> </li>
+								<li class="header__nav-item"><a href="">Контакты</a> </li>
+							</ul>
+						</nav>
+						<div class="header__contacts">
+							<div class="header__phones">
+								<a href="tel:+79532061822" class="header__phone">+7 953 206 1822</a>
+								<a href="" class="header__whatsapp">
+									<svg width='13' height='13' id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.25 12.25"><defs><style>.cls-1{fill:#004d9b;}</style></defs><path class="cls-1" d="M304.2,420.72a6.12,6.12,0,0,1-6.13,6.07h0a6.06,6.06,0,0,1-2.9-.73l-3.22.84.86-3.14a6.08,6.08,0,0,1,5.26-9.11,6,6,0,0,1,4.29,1.78A6.08,6.08,0,0,1,304.2,420.72Zm-1,0a5.07,5.07,0,1,0-9.37,2.69l.12.19-.51,1.86,1.91-.5.18.11a5,5,0,0,0,2.57.7A5.1,5.1,0,0,0,303.17,420.72Zm-2,1.45a1.46,1.46,0,0,1-.09.73,1.6,1.6,0,0,1-1,.72,3,3,0,0,1-1.83-.38A6.84,6.84,0,0,1,295.6,421a3.07,3.07,0,0,1-.62-1.57,1.7,1.7,0,0,1,.54-1.27.54.54,0,0,1,.4-.19h.29c.09,0,.22,0,.34.26s.43,1.05.47,1.12a.28.28,0,0,1,0,.27c-.29.58-.6.56-.44.83a4.09,4.09,0,0,0,2.06,1.8.23.23,0,0,0,.33,0c.09-.1.38-.44.48-.59s.2-.13.34-.08.89.42,1,.49S301.09,422.11,301.13,422.17Z" transform="translate(-291.95 -414.65)"/></svg>
+									<span>WhatsApp</span>
+								</a>
+							</div>
+							<a href="" class="header__instagram">
+								<svg  width='17' height='17' id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.01 14"><defs><style>.cls-1{fill:#004d9b;}</style></defs><path class="cls-1" d="M305,423.66a4.18,4.18,0,0,1-1.13,2.94,4.14,4.14,0,0,1-2.94,1.13c-1.15.06-4.62.06-5.77,0a4.18,4.18,0,0,1-2.94-1.13,4.14,4.14,0,0,1-1.13-2.94c-.07-1.15-.07-4.62,0-5.77a3.88,3.88,0,0,1,4.07-4.07c1.15-.06,4.62-.06,5.77,0A4.23,4.23,0,0,1,303.9,415a4.16,4.16,0,0,1,1.13,2.94C305.09,419,305.09,422.51,305,423.66Zm-1.21-2.88a15.67,15.67,0,0,0-.28-4.13,2.34,2.34,0,0,0-1.34-1.33,30.53,30.53,0,0,0-8.25,0,2.32,2.32,0,0,0-1.33,1.33,30.53,30.53,0,0,0,0,8.25,2.37,2.37,0,0,0,1.33,1.34,30.53,30.53,0,0,0,8.25,0,2.39,2.39,0,0,0,1.34-1.34A15.6,15.6,0,0,0,303.82,420.78Zm-2.15,0a3.59,3.59,0,1,1-3.59-3.59A3.59,3.59,0,0,1,301.67,420.78Zm-1.26,0a2.34,2.34,0,1,0-2.33,2.33A2.34,2.34,0,0,0,300.41,420.78Zm1.4-2.9a.84.84,0,1,1,.84-.84A.84.84,0,0,1,301.81,417.88Z" transform="translate(-291.07 -413.77)"/></svg>
+								<span>Instagram</span>
+							</a>
+						</div>
+						<div class="header__lk">
+							<a href="" class="header__lk-title">
+								Личный кабинет
+								<span class="header__lk-logo">
+									<svg  width='15' height='17' id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.97 16.64"><defs><style>.cls-1{fill:#010101;}</style></defs><path class="cls-1" d="M304.73,429.09a.83.83,0,0,1-.83-.83V426.6a2.5,2.5,0,0,0-2.5-2.5h-6.65a2.5,2.5,0,0,0-2.5,2.5v1.66a.83.83,0,0,1-1.66,0V426.6a4.16,4.16,0,0,1,4.16-4.16h6.65a4.17,4.17,0,0,1,4.16,4.16v1.66A.83.83,0,0,1,304.73,429.09Z" transform="translate(-290.59 -412.46)"/><path class="cls-1" d="M298.07,420.78a4.16,4.16,0,1,1,4.16-4.16A4.16,4.16,0,0,1,298.07,420.78Zm0-6.66a2.5,2.5,0,1,0,2.5,2.5A2.5,2.5,0,0,0,298.07,414.12Z" transform="translate(-290.59 -412.46)"/></svg>
+								</span>
+							</a>
+							<div class="header__lk-nav">
+								<button>Вход</button>
+								<button>Регистрация</button>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+				<div class="header__center">
+					<div class="container">
+						<div class="header__center-inner">
+							<a href="index.html" class="header__logo">
+							<img class="header__logo-deckstop" src="images/svg/logo-main.png" alt="">
+							<div class="header__logo-mob">
+								<div class="header__logo-left">
+									<img src="images/svg/logo-mobile_part1.png" alt="">
+								</div>
+								<div class="header__logo-right">
+									<img src="images/svg/logo-mobile_part2.png" alt="">
+									<span>интернет-магазин корейской косметики</span>
+								</div>
+							</div>
+
+							</a>
+							<div class="header__center-right">
+							<div class="header__search">
+								<input type="search" placeholder="Поиск товаров в каталоге">
+								<button>
+									<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.16 12.82"><defs><style>.cls-1{fill:#fff;}</style></defs><path class="cls-1" d="M400.35,460.35a5.46,5.46,0,0,1-4.57.59,5.38,5.38,0,0,1-3-2.39,5.5,5.5,0,0,1,8.38-7,5.57,5.57,0,0,1,1.55,2.38,5.48,5.48,0,0,1,.15,2.84,5.68,5.68,0,0,1-1.31,2.57.75.75,0,0,1,.15.09l2.17,2.18a.75.75,0,0,1,0,1.15.77.77,0,0,1-1.06-.05l-1.9-1.91Zm1-4.67a4,4,0,1,0-3.95,4A4,4,0,0,0,401.38,455.68Z" transform="translate(-391.92 -450.18)"/></svg>
+								</button>
+								<div class="header__search-hint">
+									<span>например:</span>
+									<span>Патчи для глаз</span>
+								</div>
+							</div>
+							<div class="header__buy">
+								<div class="header__burger">
+									<span></span>
+								</div>
+								<div class="header__favourite">
+									<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.19 19.87"><defs><style>.cls-1{fill:#e5221e;}</style></defs><path class="cls-1" d="M298.38,413.37l-.16.21-.15.2-.14-.2-.16-.21a6.22,6.22,0,0,0-2.47-1.78,7.68,7.68,0,0,0-2.92-.58,6,6,0,0,0-6.25,5.3,10.47,10.47,0,0,0,.26,4.63,12.64,12.64,0,0,0,3.58,5.82,17.68,17.68,0,0,0,7.93,4.1l.18,0,.17,0a17.68,17.68,0,0,0,7.93-4.1,12.64,12.64,0,0,0,3.58-5.82,10.62,10.62,0,0,0,.26-4.63,6.4,6.4,0,0,0-1.67-3.49,6.94,6.94,0,0,0-7.5-1.23A6.15,6.15,0,0,0,298.38,413.37Zm3-.43a5.45,5.45,0,0,1,5.91.91c1.33,1.33,1.75,4.09,1,6.7a11.16,11.16,0,0,1-3.17,5.14,16.18,16.18,0,0,1-7.06,3.69H298a16.14,16.14,0,0,1-7-3.69,11.18,11.18,0,0,1-3.18-5.14c-.72-2.61-.29-5.36,1-6.7a5.14,5.14,0,0,1,3.58-1.39h0a6.17,6.17,0,0,1,2.32.48,3.7,3.7,0,0,1,2.6,3.28.74.74,0,1,0,1.47,0A3.7,3.7,0,0,1,301.41,412.94Z" transform="translate(-285.98 -411.01)"/></svg>
+									<span>6</span>
+								</div>
+								<div class="header__cart">
+									<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.36 29.83"><defs><style>.cls-1{fill:#004c9a;}</style></defs><path class="cls-1" d="M310.25,434.83c-.06-.87-.14-1.75-.21-2.6l-.06-.75c-.09-1-.17-2-.26-3l-.54-6.4a.8.8,0,0,0-.82-.84.73.73,0,0,0-.53.24,1,1,0,0,0-.2.7c0,.6.09,1.21.14,1.8,0,.28.05.56.07.83.25,3,.49,5.91.74,8.86v.59H305v-.36a.43.43,0,0,1,0-.16l.36-3.27.92-8.23c.07-.6.13-1.21.2-1.81.17-1.52.34-3.09.52-4.63a.83.83,0,0,0-1-1.08h-3.37v-1.05c0-.56,0-1.1,0-1.63,0-.14,0-.27,0-.41a7.27,7.27,0,0,0-.09-1.41A5.1,5.1,0,0,0,297.1,406a5.16,5.16,0,0,0-3.34,1.64,5.09,5.09,0,0,0-1.35,3.47c0,.66,0,1.34,0,2,0,.3,0,.6,0,.89v.69h-3.48a.79.79,0,0,0-.88.81l-.42,3.79-.49,4.46-.51,4.53-.21,2c-.16,1.45-.33,2.95-.5,4.43a.86.86,0,0,0,1,1.15h13.78a.79.79,0,0,0,.81-.51.73.73,0,0,0-.07-.69.91.91,0,0,0-.77-.36H287.54l2-18h2.86v1c0,.51,0,1,0,1.48a.79.79,0,0,0,.39.68.77.77,0,0,0,.75,0,.75.75,0,0,0,.42-.74v-2.4h7.13v1c0,.51,0,1,0,1.47a.78.78,0,0,0,.42.69.74.74,0,0,0,.77,0,.78.78,0,0,0,.37-.72v-2.38h2.69l-.18,1.61-.3,2.73c-.13,1.11-.25,2.21-.37,3.31s-.28,2.45-.41,3.67c-.09.77-.17,1.54-.26,2.31-.17,1.59-.35,3.23-.54,4.84a1,1,0,0,0,.18.8,1,1,0,0,0,.74.26h5.12a1,1,0,0,0,.74-.25A.9.9,0,0,0,310.25,434.83Zm-9.15-21.52v1.35H294v-.3c0-.16,0-.31,0-.46,0-.33,0-.67,0-1v-.68a11.05,11.05,0,0,1,.07-1.72,3.51,3.51,0,0,1,3.79-2.94,3.57,3.57,0,0,1,3.26,3.46C301.11,411.77,301.1,412.55,301.1,413.31Z" transform="translate(-285.9 -405.97)"/></svg>
+									<span>25</span>
+								</div>
+								<div class="header__price">
+									4 850 <span>руб.</span>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header__bottom">
+					<div class="container">
+						<div class="header__bottom-inner">
+							<div class="header__catalog-btn ">
+							<div>
+								<span></span>
+							</div>
+							<span>КАТАЛОГ ТОВАРОВ</span>
+							</div>
+							<div class="header__brands">
+							<div class="header__brands-mob">
+								<div><span></span></div>
+								<span>ЕЩЁ</span>
+							</div>
+							<div class="header__brands-inner">
+								<div class="header__brands-btn">ПО БРЕНДАМ</div>
+								<div class="header__brands-items">
+									<a href="" class="header__brands-item">НОВИНКИ</a>
+									<a href="" class="header__brands-item">ХИТЫ ПРОДАЖ</a>
+									<a href="" class="header__brands-item">ТОВАРЫ СО СКИДКОЙ</a>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-menu ">
+					<div class="container">
+						<div class="header-menu__inner">
+							<div class="header-menu__item">
+							<div class="header-menu__item-show ">
+								<span>Уход за волосами</span>
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</div>
+							<div class="header-menu__item-hidden ">
+								<a href="" class="header-menu__item-hidden-top">
+									<span>Уход за волосами</span>
+									<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.58 10.01"><defs><style>.cls-1{fill:#e62928;}</style></defs><path class="cls-1" d="M302.79,421.66h-12V420h12l-2.25-2.81a.83.83,0,1,1,1.3-1l3.34,4.17s0,0,0,.06l.06.1,0,.09,0,.11s0,.08,0,.11v.09s0,.08,0,.12l0,.11,0,.09-.06.09s0,.05,0,.07l-3.34,4.17a.8.8,0,0,1-.65.31.86.86,0,0,1-.52-.18.83.83,0,0,1-.13-1.17Z" transform="translate(-290.78 -415.82)"/></svg>
+								</a>
+								<div class="header-menu__item-content" data-mcs-theme="3d-dark">
+									<div class="header-menu__item-col">
+										<a href="" class="header-menu__item-title">Очищение</a>
+										<a href="" class="header-menu__item-link">Гидрофильное масло</a>
+										<a href="" class="header-menu__item-link">Пенки для умывания</a>
+										<a href="" class="header-menu__item-link">Гели для умывания с длинным <br> названием в две строки</a>
+										<a href="" class="header-menu__item-link">Кислородные средства</a>
+										<a href="" class="header-menu__item-link">Мыло для лица</a>
+										<a href=""  class="header-menu__item-link">Очищающие бальзамы</a>
+										<a href="" class="header-menu__item-link">Для снятия макияжа</a>
+										<a href="" class="header-menu__item-link">Аксессуары</a>
+										<div class="header-menu__item-title">Увлажнение</div>
+										<a href="" class="header-menu__item-link">Эмульсии</a>
+									</div>
+									<div class="header-menu__item-col">
+										<a href="" class="header-menu__item-title">Отшелушивание</a>
+										<a href="" class="header-menu__item-link">Кислотные пилинги</a>
+										<a href="" class="header-menu__item-link">Пилинг-скатки</a>
+										<a href="" class="header-menu__item-link">Пилинг-спонжи</a>
+										<a href="" class="header-menu__item-link">Энзимные пудры</a>
+										<a href="" class="header-menu__item-link">Скрабы</a>
+													
+										<a href="" class="header-menu__item-title">Тонизирование</a>
+										<a href="" class="header-menu__item-link">Тоники и тонеры</a>
+										<a href="" class="header-menu__item-link">Пэды</a>
+										<a href="" class="header-menu__item-link">Мисты</a>
+										<a href="" class="header-menu__item-link">Подпунтк для примера</a>
+										<a href="" class="header-menu__item-link">Ещё подпункт</a>
+									</div>
+									<div class="header-menu__item-col">
+										<a href="" class="header-menu__item-title">Увлажнение</a>
+										<a href="" class="header-menu__item-link">Эмульсии</a>
+										<a href="" class="header-menu__item-link">Кремы для лица</a>
+										<a href="" class="header-menu__item-link">Кремы для шеи</a>
+													
+										<a href="" class="header-menu__item-title">Для кожи вокруг глаз</a>
+										<a href="" class="header-menu__item-link">Кремы для век</a>
+										<a href="" class="header-menu__item-link">Патчи под глаза</a>
+
+										<a href="" class="header-menu__item-title">НАПРАВЛЕННЫЙ УХОД</a>
+										<a href="" class="header-menu__item-link">Эссенции</a>
+										<a href="" class="header-menu__item-link">Сыворотки и ампулы</a>
+										<a href="" class="header-menu__item-link">Кинезио тейпы</a>
+									</div>
+								</div>
+							</div>
+							</div>
+							<div class="header-menu__item">
+							<div class="header-menu__item-show">
+								<span>Уход за телом</span>
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</div>
+							<div class="header-menu__item-hidden">
+								<a href="" class="header-menu__item-hidden-top">
+									<span>Уход за телом</span>
+									<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.58 10.01"><defs><style>.cls-1{fill:#e62928;}</style></defs><path class="cls-1" d="M302.79,421.66h-12V420h12l-2.25-2.81a.83.83,0,1,1,1.3-1l3.34,4.17s0,0,0,.06l.06.1,0,.09,0,.11s0,.08,0,.11v.09s0,.08,0,.12l0,.11,0,.09-.06.09s0,.05,0,.07l-3.34,4.17a.8.8,0,0,1-.65.31.86.86,0,0,1-.52-.18.83.83,0,0,1-.13-1.17Z" transform="translate(-290.78 -415.82)"/></svg>
+								</a>
+								<div class="header-menu__item-content" data-mcs-theme="3d-dark">
+									<div class="header-menu__item-col">
+										<a href="" class="header-menu__item-title">Очищение</a>
+										<a href="" class="header-menu__item-link">Гидрофильное масло</a>
+										<a href="" class="header-menu__item-link">Пенки для умывания</a>
+										<a href="" class="header-menu__item-link">Гели для умывания с длинным <br> названием в две строки</a>
+										<a href="" class="header-menu__item-link">Кислородные средства</a>
+										<a href="" class="header-menu__item-link">Мыло для лица</a>
+										<a href=""  class="header-menu__item-link">Очищающие бальзамы</a>
+										<a href="" class="header-menu__item-link">Для снятия макияжа</a>
+										<a href="" class="header-menu__item-link">Аксессуары</a>
+										<div class="header-menu__item-title">Увлажнение</div>
+										<a href="" class="header-menu__item-link">Эмульсии</a>
+									</div>
+									<div class="header-menu__item-col">
+										<a href="" class="header-menu__item-title">Отшелушивание</a>
+										<a href="" class="header-menu__item-link">Кислотные пилинги</a>
+										<a href="" class="header-menu__item-link">Пилинг-скатки</a>
+										<a href="" class="header-menu__item-link">Пилинг-спонжи</a>
+										<a href="" class="header-menu__item-link">Энзимные пудры</a>
+										<a href="" class="header-menu__item-link">Скрабы</a>
+													
+										<a href="" class="header-menu__item-title">Тонизирование</a>
+										<a href="" class="header-menu__item-link">Тоники и тонеры</a>
+										<a href="" class="header-menu__item-link">Пэды</a>
+										<a href="" class="header-menu__item-link">Мисты</a>
+										<a href="" class="header-menu__item-link">Подпунтк для примера</a>
+										<a href="" class="header-menu__item-link">Ещё подпункт</a>
+									</div>
+									<div class="header-menu__item-col">
+										<a href="" class="header-menu__item-title">Увлажнение</a>
+										<a href="" class="header-menu__item-link">Эмульсии</a>
+										<a href="" class="header-menu__item-link">Кремы для лица</a>
+										<a href="" class="header-menu__item-link">Кремы для шеи</a>
+													
+										<a href="" class="header-menu__item-title">Для кожи вокруг глаз</a>
+										<a href="" class="header-menu__item-link">Кремы для век</a>
+										<a href="" class="header-menu__item-link">Патчи под глаза</a>
+
+										<a href="" class="header-menu__item-title">НАПРАВЛЕННЫЙ УХОД</a>
+										<a href="" class="header-menu__item-link">Эссенции</a>
+										<a href="" class="header-menu__item-link">Сыворотки и ампулы</a>
+										<a href="" class="header-menu__item-link">Кинезио тейпы</a>
+									</div>
+								</div>
+							</div>
+							</div>
+							<div class="header-menu__item">
+							<div class="header-menu__item-show">
+								<span>Косметика для лица</span>
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</div>
+							<div class="header-menu__item-hidden">
+								<a href="" class="header-menu__item-hidden-top">
+									<span>Косметика для лица</span>
+									<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.58 10.01"><defs><style>.cls-1{fill:#e62928;}</style></defs><path class="cls-1" d="M302.79,421.66h-12V420h12l-2.25-2.81a.83.83,0,1,1,1.3-1l3.34,4.17s0,0,0,.06l.06.1,0,.09,0,.11s0,.08,0,.11v.09s0,.08,0,.12l0,.11,0,.09-.06.09s0,.05,0,.07l-3.34,4.17a.8.8,0,0,1-.65.31.86.86,0,0,1-.52-.18.83.83,0,0,1-.13-1.17Z" transform="translate(-290.78 -415.82)"/></svg>
+								</a>
+								<div class="header-menu__item-content" data-mcs-theme="3d-dark">
+									<div class="header-menu__item-col">
+										<a href="" class="header-menu__item-title">Очищение</a>
+										<a href="" class="header-menu__item-link">Гидрофильное масло</a>
+										<a href="" class="header-menu__item-link">Пенки для умывания</a>
+										<a href="" class="header-menu__item-link">Гели для умывания с длинным <br> названием в две строки</a>
+										<a href="" class="header-menu__item-link">Кислородные средства</a>
+										<a href="" class="header-menu__item-link">Мыло для лица</a>
+										<a href=""  class="header-menu__item-link">Очищающие бальзамы</a>
+										<a href="" class="header-menu__item-link">Для снятия макияжа</a>
+										<a href="" class="header-menu__item-link">Аксессуары</a>
+										<div class="header-menu__item-title">Увлажнение</div>
+										<a href="" class="header-menu__item-link">Эмульсии</a>
+									</div>
+									<div class="header-menu__item-col">
+										<a href="" class="header-menu__item-title">Отшелушивание</a>
+										<a href="" class="header-menu__item-link">Кислотные пилинги</a>
+										<a href="" class="header-menu__item-link">Пилинг-скатки</a>
+										<a href="" class="header-menu__item-link">Пилинг-спонжи</a>
+										<a href="" class="header-menu__item-link">Энзимные пудры</a>
+										<a href="" class="header-menu__item-link">Скрабы</a>
+													
+										<a href="" class="header-menu__item-title">Тонизирование</a>
+										<a href="" class="header-menu__item-link">Тоники и тонеры</a>
+										<a href="" class="header-menu__item-link">Пэды</a>
+										<a href="" class="header-menu__item-link">Мисты</a>
+										<a href="" class="header-menu__item-link">Подпунтк для примера</a>
+										<a href="" class="header-menu__item-link">Ещё подпункт</a>
+									</div>
+									<div class="header-menu__item-col">
+										<a href="" class="header-menu__item-title">Увлажнение</a>
+										<a href="" class="header-menu__item-link">Эмульсии</a>
+										<a href="" class="header-menu__item-link">Кремы для лица</a>
+										<a href="" class="header-menu__item-link">Кремы для шеи</a>
+													
+										<a href="" class="header-menu__item-title">Для кожи вокруг глаз</a>
+										<a href="" class="header-menu__item-link">Кремы для век</a>
+										<a href="" class="header-menu__item-link">Патчи под глаза</a>
+
+										<a href="" class="header-menu__item-title">НАПРАВЛЕННЫЙ УХОД</a>
+										<a href="" class="header-menu__item-link">Эссенции</a>
+										<a href="" class="header-menu__item-link">Сыворотки и ампулы</a>
+										<a href="" class="header-menu__item-link">Кинезио тейпы</a>
+									</div>
+								</div>
+							</div>
+							</div>
+							<div class="header-menu__item">
+							<div class="header-menu__item-show">
+								<span>Декоративная косметика</span>
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</div>   
+							<div class="header-menu__item-hidden">
+								<a href="" class="header-menu__item-hidden-top">
+									<span>Декоративная косметика</span>
+									<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.58 10.01"><defs><style>.cls-1{fill:#e62928;}</style></defs><path class="cls-1" d="M302.79,421.66h-12V420h12l-2.25-2.81a.83.83,0,1,1,1.3-1l3.34,4.17s0,0,0,.06l.06.1,0,.09,0,.11s0,.08,0,.11v.09s0,.08,0,.12l0,.11,0,.09-.06.09s0,.05,0,.07l-3.34,4.17a.8.8,0,0,1-.65.31.86.86,0,0,1-.52-.18.83.83,0,0,1-.13-1.17Z" transform="translate(-290.78 -415.82)"/></svg>
+								</a>
+								<div class="header-menu__item-content" data-mcs-theme="3d-dark">
+									<div class="header-menu__item-col">
+										<a href="" class="header-menu__item-title">Очищение</a>
+										<a href="" class="header-menu__item-link">Гидрофильное масло</a>
+										<a href="" class="header-menu__item-link">Пенки для умывания</a>
+										<a href="" class="header-menu__item-link">Гели для умывания с длинным <br> названием в две строки</a>
+										<a href="" class="header-menu__item-link">Кислородные средства</a>
+										<a href="" class="header-menu__item-link">Мыло для лица</a>
+										<a href=""  class="header-menu__item-link">Очищающие бальзамы</a>
+										<a href="" class="header-menu__item-link">Для снятия макияжа</a>
+										<a href="" class="header-menu__item-link">Аксессуары</a>
+										<div class="header-menu__item-title">Увлажнение</div>
+										<a href="" class="header-menu__item-link">Эмульсии</a>
+									</div>
+									<div class="header-menu__item-col">
+										<a href="" class="header-menu__item-title">Отшелушивание</a>
+										<a href="" class="header-menu__item-link">Кислотные пилинги</a>
+										<a href="" class="header-menu__item-link">Пилинг-скатки</a>
+										<a href="" class="header-menu__item-link">Пилинг-спонжи</a>
+										<a href="" class="header-menu__item-link">Энзимные пудры</a>
+										<a href="" class="header-menu__item-link">Скрабы</a>
+													
+										<a href="" class="header-menu__item-title">Тонизирование</a>
+										<a href="" class="header-menu__item-link">Тоники и тонеры</a>
+										<a href="" class="header-menu__item-link">Пэды</a>
+										<a href="" class="header-menu__item-link">Мисты</a>
+										<a href="" class="header-menu__item-link">Подпунтк для примера</a>
+										<a href="" class="header-menu__item-link">Ещё подпункт</a>
+									</div>
+									<div class="header-menu__item-col">
+										<a href="" class="header-menu__item-title">Увлажнение</a>
+										<a href="" class="header-menu__item-link">Эмульсии</a>
+										<a href="" class="header-menu__item-link">Кремы для лица</a>
+										<a href="" class="header-menu__item-link">Кремы для шеи</a>
+													
+										<a href="" class="header-menu__item-title">Для кожи вокруг глаз</a>
+										<a href="" class="header-menu__item-link">Кремы для век</a>
+										<a href="" class="header-menu__item-link">Патчи под глаза</a>
+
+										<a href="" class="header-menu__item-title">НАПРАВЛЕННЫЙ УХОД</a>
+										<a href="" class="header-menu__item-link">Эссенции</a>
+										<a href="" class="header-menu__item-link">Сыворотки и ампулы</a>
+										<a href="" class="header-menu__item-link">Кинезио тейпы</a>
+									</div>
+								</div>
+							</div>
+							</div>
+							<div class="header-menu__item">
+							<div class="header-menu__item-show">
+								<span>Наборы</span>
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</div>
+							<div class="header-menu__item-hidden">
+								<a href="" class="header-menu__item-hidden-top">
+									<span>Наборы</span>
+									<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.58 10.01"><defs><style>.cls-1{fill:#e62928;}</style></defs><path class="cls-1" d="M302.79,421.66h-12V420h12l-2.25-2.81a.83.83,0,1,1,1.3-1l3.34,4.17s0,0,0,.06l.06.1,0,.09,0,.11s0,.08,0,.11v.09s0,.08,0,.12l0,.11,0,.09-.06.09s0,.05,0,.07l-3.34,4.17a.8.8,0,0,1-.65.31.86.86,0,0,1-.52-.18.83.83,0,0,1-.13-1.17Z" transform="translate(-290.78 -415.82)"/></svg>
+								</a>
+								<div class="header-menu__item-content" data-mcs-theme="3d-dark">
+									<div class="header-menu__item-col">
+										<a href="" class="header-menu__item-title">Очищение</a>
+										<a href="" class="header-menu__item-link">Гидрофильное масло</a>
+										<a href="" class="header-menu__item-link">Пенки для умывания</a>
+										<a href="" class="header-menu__item-link">Гели для умывания с длинным <br> названием в две строки</a>
+										<a href="" class="header-menu__item-link">Кислородные средства</a>
+										<a href="" class="header-menu__item-link">Мыло для лица</a>
+										<a href=""  class="header-menu__item-link">Очищающие бальзамы</a>
+										<a href="" class="header-menu__item-link">Для снятия макияжа</a>
+										<a href="" class="header-menu__item-link">Аксессуары</a>
+										<div class="header-menu__item-title">Увлажнение</div>
+										<a href="" class="header-menu__item-link">Эмульсии</a>
+									</div>
+									<div class="header-menu__item-col">
+										<a href="" class="header-menu__item-title">Отшелушивание</a>
+										<a href="" class="header-menu__item-link">Кислотные пилинги</a>
+										<a href="" class="header-menu__item-link">Пилинг-скатки</a>
+										<a href="" class="header-menu__item-link">Пилинг-спонжи</a>
+										<a href="" class="header-menu__item-link">Энзимные пудры</a>
+										<a href="" class="header-menu__item-link">Скрабы</a>
+													
+										<a href="" class="header-menu__item-title">Тонизирование</a>
+										<a href="" class="header-menu__item-link">Тоники и тонеры</a>
+										<a href="" class="header-menu__item-link">Пэды</a>
+										<a href="" class="header-menu__item-link">Мисты</a>
+										<a href="" class="header-menu__item-link">Подпунтк для примера</a>
+										<a href="" class="header-menu__item-link">Ещё подпункт</a>
+									</div>
+									<div class="header-menu__item-col">
+										<a href="" class="header-menu__item-title">Увлажнение</a>
+										<a href="" class="header-menu__item-link">Эмульсии</a>
+										<a href="" class="header-menu__item-link">Кремы для лица</a>
+										<a href="" class="header-menu__item-link">Кремы для шеи</a>
+													
+										<a href="" class="header-menu__item-title">Для кожи вокруг глаз</a>
+										<a href="" class="header-menu__item-link">Кремы для век</a>
+										<a href="" class="header-menu__item-link">Патчи под глаза</a>
+
+										<a href="" class="header-menu__item-title">НАПРАВЛЕННЫЙ УХОД</a>
+										<a href="" class="header-menu__item-link">Эссенции</a>
+										<a href="" class="header-menu__item-link">Сыворотки и ампулы</a>
+										<a href="" class="header-menu__item-link">Кинезио тейпы</a>
+									</div>
+								</div>
+							</div>
+							</div>
+							<div class="header-menu__item">
+							<div class="header-menu__item-show">
+								<span>Аксессуары</span>
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</div>
+							<div class="header-menu__item-hidden">
+								<a href="" class="header-menu__item-hidden-top">
+									<span>Аксессуары</span>
+									<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.58 10.01"><defs><style>.cls-1{fill:#e62928;}</style></defs><path class="cls-1" d="M302.79,421.66h-12V420h12l-2.25-2.81a.83.83,0,1,1,1.3-1l3.34,4.17s0,0,0,.06l.06.1,0,.09,0,.11s0,.08,0,.11v.09s0,.08,0,.12l0,.11,0,.09-.06.09s0,.05,0,.07l-3.34,4.17a.8.8,0,0,1-.65.31.86.86,0,0,1-.52-.18.83.83,0,0,1-.13-1.17Z" transform="translate(-290.78 -415.82)"/></svg>
+								</a>
+								<div class="header-menu__item-content" data-mcs-theme="3d-dark">
+									<div class="header-menu__item-col">
+										<a href="" class="header-menu__item-title">Очищение</a>
+										<a href="" class="header-menu__item-link">Гидрофильное масло</a>
+										<a href="" class="header-menu__item-link">Пенки для умывания</a>
+										<a href="" class="header-menu__item-link">Гели для умывания с длинным <br> названием в две строки</a>
+										<a href="" class="header-menu__item-link">Кислородные средства</a>
+										<a href="" class="header-menu__item-link">Мыло для лица</a>
+										<a href=""  class="header-menu__item-link">Очищающие бальзамы</a>
+										<a href="" class="header-menu__item-link">Для снятия макияжа</a>
+										<a href="" class="header-menu__item-link">Аксессуары</a>
+										<div class="header-menu__item-title">Увлажнение</div>
+										<a href="" class="header-menu__item-link">Эмульсии</a>
+									</div>
+									<div class="header-menu__item-col">
+										<a href="" class="header-menu__item-title">Отшелушивание</a>
+										<a href="" class="header-menu__item-link">Кислотные пилинги</a>
+										<a href="" class="header-menu__item-link">Пилинг-скатки</a>
+										<a href="" class="header-menu__item-link">Пилинг-спонжи</a>
+										<a href="" class="header-menu__item-link">Энзимные пудры</a>
+										<a href="" class="header-menu__item-link">Скрабы</a>
+													
+										<a href="" class="header-menu__item-title">Тонизирование</a>
+										<a href="" class="header-menu__item-link">Тоники и тонеры</a>
+										<a href="" class="header-menu__item-link">Пэды</a>
+										<a href="" class="header-menu__item-link">Мисты</a>
+										<a href="" class="header-menu__item-link">Подпунтк для примера</a>
+										<a href="" class="header-menu__item-link">Ещё подпункт</a>
+									</div>
+									<div class="header-menu__item-col">
+										<a href="" class="header-menu__item-title">Увлажнение</a>
+										<a href="" class="header-menu__item-link">Эмульсии</a>
+										<a href="" class="header-menu__item-link">Кремы для лица</a>
+										<a href="" class="header-menu__item-link">Кремы для шеи</a>
+													
+										<a href="" class="header-menu__item-title">Для кожи вокруг глаз</a>
+										<a href="" class="header-menu__item-link">Кремы для век</a>
+										<a href="" class="header-menu__item-link">Патчи под глаза</a>
+
+										<a href="" class="header-menu__item-title">НАПРАВЛЕННЫЙ УХОД</a>
+										<a href="" class="header-menu__item-link">Эссенции</a>
+										<a href="" class="header-menu__item-link">Сыворотки и ампулы</a>
+										<a href="" class="header-menu__item-link">Кинезио тейпы</a>
+									</div>
+								</div>
+							</div>
+							</div>
+							<div class="header-menu__item">
+							<div class="header-menu__item-show">
+								<span>Для мужчин</span>
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</div>
+							<div class="header-menu__item-hidden">
+								<a href="" class="header-menu__item-hidden-top">
+									<span>Для мужчин</span>
+									<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.58 10.01"><defs><style>.cls-1{fill:#e62928;}</style></defs><path class="cls-1" d="M302.79,421.66h-12V420h12l-2.25-2.81a.83.83,0,1,1,1.3-1l3.34,4.17s0,0,0,.06l.06.1,0,.09,0,.11s0,.08,0,.11v.09s0,.08,0,.12l0,.11,0,.09-.06.09s0,.05,0,.07l-3.34,4.17a.8.8,0,0,1-.65.31.86.86,0,0,1-.52-.18.83.83,0,0,1-.13-1.17Z" transform="translate(-290.78 -415.82)"/></svg>
+								</a>
+								<div class="header-menu__item-content" data-mcs-theme="3d-dark">
+									<div class="header-menu__item-col">
+										<a href="" class="header-menu__item-title">Очищение</a>
+										<a href="" class="header-menu__item-link">Гидрофильное масло</a>
+										<a href="" class="header-menu__item-link">Пенки для умывания</a>
+										<a href="" class="header-menu__item-link">Гели для умывания с длинным <br> названием в две строки</a>
+										<a href="" class="header-menu__item-link">Кислородные средства</a>
+										<a href="" class="header-menu__item-link">Мыло для лица</a>
+										<a href=""  class="header-menu__item-link">Очищающие бальзамы</a>
+										<a href="" class="header-menu__item-link">Для снятия макияжа</a>
+										<a href="" class="header-menu__item-link">Аксессуары</a>
+										<div class="header-menu__item-title">Увлажнение</div>
+										<a href="" class="header-menu__item-link">Эмульсии</a>
+									</div>
+									<div class="header-menu__item-col">
+										<a href="" class="header-menu__item-title">Отшелушивание</a>
+										<a href="" class="header-menu__item-link">Кислотные пилинги</a>
+										<a href="" class="header-menu__item-link">Пилинг-скатки</a>
+										<a href="" class="header-menu__item-link">Пилинг-спонжи</a>
+										<a href="" class="header-menu__item-link">Энзимные пудры</a>
+										<a href="" class="header-menu__item-link">Скрабы</a>
+													
+										<a href="" class="header-menu__item-title">Тонизирование</a>
+										<a href="" class="header-menu__item-link">Тоники и тонеры</a>
+										<a href="" class="header-menu__item-link">Пэды</a>
+										<a href="" class="header-menu__item-link">Мисты</a>
+										<a href="" class="header-menu__item-link">Подпунтк для примера</a>
+										<a href="" class="header-menu__item-link">Ещё подпункт</a>
+									</div>
+									<div class="header-menu__item-col">
+										<a href="" class="header-menu__item-title">Увлажнение</a>
+										<a href="" class="header-menu__item-link">Эмульсии</a>
+										<a href="" class="header-menu__item-link">Кремы для лица</a>
+										<a href="" class="header-menu__item-link">Кремы для шеи</a>
+													
+										<a href="" class="header-menu__item-title">Для кожи вокруг глаз</a>
+										<a href="" class="header-menu__item-link">Кремы для век</a>
+										<a href="" class="header-menu__item-link">Патчи под глаза</a>
+
+										<a href="" class="header-menu__item-title">НАПРАВЛЕННЫЙ УХОД</a>
+										<a href="" class="header-menu__item-link">Эссенции</a>
+										<a href="" class="header-menu__item-link">Сыворотки и ампулы</a>
+										<a href="" class="header-menu__item-link">Кинезио тейпы</a>
+									</div>
+								</div>
+							</div>
+							</div>
+							<div class="header-menu__item">
+							<div class="header-menu__item-show">
+								<span>Детские товары</span>
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</div>
+							<div class="header-menu__item-hidden">
+								<a href="" class="header-menu__item-hidden-top">
+									<span>Детские товары</span>
+									<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.58 10.01"><defs><style>.cls-1{fill:#e62928;}</style></defs><path class="cls-1" d="M302.79,421.66h-12V420h12l-2.25-2.81a.83.83,0,1,1,1.3-1l3.34,4.17s0,0,0,.06l.06.1,0,.09,0,.11s0,.08,0,.11v.09s0,.08,0,.12l0,.11,0,.09-.06.09s0,.05,0,.07l-3.34,4.17a.8.8,0,0,1-.65.31.86.86,0,0,1-.52-.18.83.83,0,0,1-.13-1.17Z" transform="translate(-290.78 -415.82)"/></svg>
+								</a>
+								<div class="header-menu__item-content" data-mcs-theme="3d-dark">
+									<div class="header-menu__item-col">
+										<a href="" class="header-menu__item-title">Очищение</a>
+										<a href="" class="header-menu__item-link">Гидрофильное масло</a>
+										<a href="" class="header-menu__item-link">Пенки для умывания</a>
+										<a href="" class="header-menu__item-link">Гели для умывания с длинным <br> названием в две строки</a>
+										<a href="" class="header-menu__item-link">Кислородные средства</a>
+										<a href="" class="header-menu__item-link">Мыло для лица</a>
+										<a href=""  class="header-menu__item-link">Очищающие бальзамы</a>
+										<a href="" class="header-menu__item-link">Для снятия макияжа</a>
+										<a href="" class="header-menu__item-link">Аксессуары</a>
+										<div class="header-menu__item-title">Увлажнение</div>
+										<a href="" class="header-menu__item-link">Эмульсии</a>
+									</div>
+									<div class="header-menu__item-col">
+										<a href="" class="header-menu__item-title">Отшелушивание</a>
+										<a href="" class="header-menu__item-link">Кислотные пилинги</a>
+										<a href="" class="header-menu__item-link">Пилинг-скатки</a>
+										<a href="" class="header-menu__item-link">Пилинг-спонжи</a>
+										<a href="" class="header-menu__item-link">Энзимные пудры</a>
+										<a href="" class="header-menu__item-link">Скрабы</a>
+													
+										<a href="" class="header-menu__item-title">Тонизирование</a>
+										<a href="" class="header-menu__item-link">Тоники и тонеры</a>
+										<a href="" class="header-menu__item-link">Пэды</a>
+										<a href="" class="header-menu__item-link">Мисты</a>
+										<a href="" class="header-menu__item-link">Подпунтк для примера</a>
+										<a href="" class="header-menu__item-link">Ещё подпункт</a>
+									</div>
+									<div class="header-menu__item-col">
+										<a href="" class="header-menu__item-title">Увлажнение</a>
+										<a href="" class="header-menu__item-link">Эмульсии</a>
+										<a href="" class="header-menu__item-link">Кремы для лица</a>
+										<a href="" class="header-menu__item-link">Кремы для шеи</a>
+													
+										<a href="" class="header-menu__item-title">Для кожи вокруг глаз</a>
+										<a href="" class="header-menu__item-link">Кремы для век</a>
+										<a href="" class="header-menu__item-link">Патчи под глаза</a>
+
+										<a href="" class="header-menu__item-title">НАПРАВЛЕННЫЙ УХОД</a>
+										<a href="" class="header-menu__item-link">Эссенции</a>
+										<a href="" class="header-menu__item-link">Сыворотки и ампулы</a>
+										<a href="" class="header-menu__item-link">Кинезио тейпы</a>
+									</div>
+								</div>
+							</div>
+							</div>
+							<div class="header-menu__item">
+							<div class="header-menu__item-show">
+								<span>Бытовая химия</span>
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</div>
+							<div class="header-menu__item-hidden">
+								<a href="" class="header-menu__item-hidden-top">
+									<span>Бытовая химия</span>
+									<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.58 10.01"><defs><style>.cls-1{fill:#e62928;}</style></defs><path class="cls-1" d="M302.79,421.66h-12V420h12l-2.25-2.81a.83.83,0,1,1,1.3-1l3.34,4.17s0,0,0,.06l.06.1,0,.09,0,.11s0,.08,0,.11v.09s0,.08,0,.12l0,.11,0,.09-.06.09s0,.05,0,.07l-3.34,4.17a.8.8,0,0,1-.65.31.86.86,0,0,1-.52-.18.83.83,0,0,1-.13-1.17Z" transform="translate(-290.78 -415.82)"/></svg>
+								</a>
+								<div class="header-menu__item-content" data-mcs-theme="3d-dark">
+									<div class="header-menu__item-col">
+										<a href="" class="header-menu__item-title">Очищение</a>
+										<a href="" class="header-menu__item-link">Гидрофильное масло</a>
+										<a href="" class="header-menu__item-link">Пенки для умывания</a>
+										<a href="" class="header-menu__item-link">Гели для умывания с длинным <br> названием в две строки</a>
+										<a href="" class="header-menu__item-link">Кислородные средства</a>
+										<a href="" class="header-menu__item-link">Мыло для лица</a>
+										<a href=""  class="header-menu__item-link">Очищающие бальзамы</a>
+										<a href="" class="header-menu__item-link">Для снятия макияжа</a>
+										<a href="" class="header-menu__item-link">Аксессуары</a>
+										<div class="header-menu__item-title">Увлажнение</div>
+										<a href="" class="header-menu__item-link">Эмульсии</a>
+									</div>
+									<div class="header-menu__item-col">
+										<a href="" class="header-menu__item-title">Отшелушивание</a>
+										<a href="" class="header-menu__item-link">Кислотные пилинги</a>
+										<a href="" class="header-menu__item-link">Пилинг-скатки</a>
+										<a href="" class="header-menu__item-link">Пилинг-спонжи</a>
+										<a href="" class="header-menu__item-link">Энзимные пудры</a>
+										<a href="" class="header-menu__item-link">Скрабы</a>
+													
+										<a href="" class="header-menu__item-title">Тонизирование</a>
+										<a href="" class="header-menu__item-link">Тоники и тонеры</a>
+										<a href="" class="header-menu__item-link">Пэды</a>
+										<a href="" class="header-menu__item-link">Мисты</a>
+										<a href="" class="header-menu__item-link">Подпунтк для примера</a>
+										<a href="" class="header-menu__item-link">Ещё подпункт</a>
+									</div>
+									<div class="header-menu__item-col">
+										<a href="" class="header-menu__item-title">Увлажнение</a>
+										<a href="" class="header-menu__item-link">Эмульсии</a>
+										<a href="" class="header-menu__item-link">Кремы для лица</a>
+										<a href="" class="header-menu__item-link">Кремы для шеи</a>
+													
+										<a href="" class="header-menu__item-title">Для кожи вокруг глаз</a>
+										<a href="" class="header-menu__item-link">Кремы для век</a>
+										<a href="" class="header-menu__item-link">Патчи под глаза</a>
+
+										<a href="" class="header-menu__item-title">НАПРАВЛЕННЫЙ УХОД</a>
+										<a href="" class="header-menu__item-link">Эссенции</a>
+										<a href="" class="header-menu__item-link">Сыворотки и ампулы</a>
+										<a href="" class="header-menu__item-link">Кинезио тейпы</a>
+									</div>
+								</div>
+							</div>
+							</div>
+
+
+
+
+
+
+
+
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<section class='page-head'>
+				<div class='container'>
+					<div class='page-head__inner'>
+						<a href="" class="page-head__back">
+							<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.93 7.8"><defs><style>.cls-1{fill:#463e8f;}</style></defs><path class="cls-1" d="M386.28,398.69a.41.41,0,0,0-.46.05l-4.33,3.46a.46.46,0,0,0-.16.34.44.44,0,0,0,.16.34l4.33,3.47a.46.46,0,0,0,.27.09.41.41,0,0,0,.19,0,.43.43,0,0,0,.25-.39v-6.93A.43.43,0,0,0,386.28,398.69Zm-.62,6.42-3.21-2.57,3.21-2.56Z" transform="translate(-379.59 -398.64)"/><path class="cls-1" d="M380,399.08a.44.44,0,0,0-.44.43v6.07a.44.44,0,0,0,.44.43.43.43,0,0,0,.43-.43v-6.07A.43.43,0,0,0,380,399.08Z" transform="translate(-379.59 -398.64)"/></svg>
+							<span>вернуться в каталог</span>
+						</a>
+						<h1 class="page-head__title">КОРЗИНА</h1>
+						<button class="page-head__refresh">
+							<span>обновить корзину</span>
+							<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.7 10.76"><defs><style>.cls-1{fill:#463e8f;}</style></defs><path class="cls-1" d="M379.2,402.47l1.44-1.14a.5.5,0,0,1,.59-.07.46.46,0,0,1,0,.78c-.51.42-1,.82-1.55,1.23-.23.18-.45.37-.68.54a.44.44,0,0,1-.68-.09c-.65-.86-1.28-1.73-1.91-2.6a.45.45,0,0,1,.08-.66.44.44,0,0,1,.65.12c.31.4.61.82.91,1.23l.2.25a5.32,5.32,0,0,1,1-2.65,5.17,5.17,0,0,1,5-2.2,5.1,5.1,0,0,1,4.39,3.43,5.34,5.34,0,0,1-4.37,7.24,5.21,5.21,0,0,1-4.38-1.47.46.46,0,1,1,.64-.66,4.46,4.46,0,1,0-1.36-3.37S379.18,402.42,379.2,402.47Z" transform="translate(-376.3 -397.17)"/></svg>
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<section class='cart'>
+				<div class='container'>
+					<div class='cart__inner'>
+						<div class="cart__left">
+							<h2 class="cart__title">СОСТАВ ЗАКАЗА</h2>
+							<div class="cart__items">
+								<div class="cart__item">
+									<div class="cart__item-img">
+										<a href="">
+											<img src="images/new1.jpg" alt="">
+										</a>
+									</div>
+									<a href="" class="cart__item-title">Отшелушивающий скраб для тела Re Ri Body scrub скраб для тела</a>
+									<div class="cart__item-num">
+										<p>кол-во:</p>
+										<div class='cart__calc '>
+										   <button class='cart__calc-minus disabled'>-</button>
+										   <input type='text' value='1'>
+										   <button class='cart__calc-plus'>+</button>
+										</div>
+									</div>
+									<div class="cart__item-sum">
+										<p>сумма:</p>
+										<p class="cart__item-price">
+											1500
+											<span>руб.</span>
+										</p>
+									</div>
+									<button class="cart__item-delete">
+										<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13"><defs><style>.cls-1{fill:#e41f1d;}</style></defs><path class="cls-1" d="M455.56,411.79a.44.44,0,0,0-.48-.25h-3.32v-1.1a1,1,0,0,0-1.1-1.11h-3.11a1,1,0,0,0-1.08,1.07v1.14h-3.24a.62.62,0,0,0-.61.31v.3a.64.64,0,0,0,.67.29h1V415c0,1.94,0,4,0,5.94a1.28,1.28,0,0,0,.8,1.36h8.11A1.29,1.29,0,0,0,454,421c0-2,0-4,0-5.94v-2.6h1.18a.45.45,0,0,0,.41-.22A.4.4,0,0,0,455.56,411.79Zm-8.18-1.55h3.48v1.28h-3.48Zm5.6,11.11a.47.47,0,0,1-.33.1h0c-2.44,0-4.95,0-7.11,0a.3.3,0,0,1-.38-.35c0-2.13,0-4.3,0-6.4v-2.26h7.9v2.15c0,2.11,0,4.29,0,6.43A.45.45,0,0,1,453,421.35Z" transform="translate(-442.62 -409.33)"/><path class="cls-1" d="M449.56,414.8a.46.46,0,0,0-.44-.52h0a.41.41,0,0,0-.3.12.57.57,0,0,0-.15.41v4.25a.52.52,0,0,0,.17.41.39.39,0,0,0,.32.11.47.47,0,0,0,.41-.53q0-.74,0-1.47v-1.25C449.57,415.83,449.57,415.31,449.56,414.8Z" transform="translate(-442.62 -409.33)"/><path class="cls-1" d="M447.36,414.8a.47.47,0,0,0-.44-.52h0a.41.41,0,0,0-.3.12.53.53,0,0,0-.14.39v4.27c0,.31.17.52.44.52a.44.44,0,0,0,.3-.11.58.58,0,0,0,.15-.42V414.8Z" transform="translate(-442.62 -409.33)"/><path class="cls-1" d="M451.68,414.49a.4.4,0,0,0-.37-.21l-.11,0a.44.44,0,0,0-.33.45v4.33a.54.54,0,0,0,.14.38.43.43,0,0,0,.31.12.44.44,0,0,0,.43-.5c0-1.6,0-3,0-4.29A.58.58,0,0,0,451.68,414.49Z" transform="translate(-442.62 -409.33)"/></svg>
+									</button>
+								</div>
+								<div class="cart__item">	
+									<div class="cart__item-img">
+										<a href="">
+											<img src="images/new2.jpg" alt="">
+										</a>
+									</div>
+									<a href="" class="cart__item-title">Отшелушивающий скраб для тела Re Ri Body scrub</a>
+									<div class="cart__item-num">
+										<p>кол-во:</p>
+										<div class='cart__calc'>
+										   <button class='cart__calc-minus'>-</button>
+										   <input type='text' value='2'>
+										   <button class='cart__calc-plus'>+</button>
+										</div>
+									</div>
+									<div class="cart__item-sum">
+										<p>сумма:</p>
+										<p class="cart__item-price">
+											1640
+											<span>руб.</span>
+										</p>
+									</div>
+									<button class="cart__item-delete">
+										<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13"><defs><style>.cls-1{fill:#e41f1d;}</style></defs><path class="cls-1" d="M455.56,411.79a.44.44,0,0,0-.48-.25h-3.32v-1.1a1,1,0,0,0-1.1-1.11h-3.11a1,1,0,0,0-1.08,1.07v1.14h-3.24a.62.62,0,0,0-.61.31v.3a.64.64,0,0,0,.67.29h1V415c0,1.94,0,4,0,5.94a1.28,1.28,0,0,0,.8,1.36h8.11A1.29,1.29,0,0,0,454,421c0-2,0-4,0-5.94v-2.6h1.18a.45.45,0,0,0,.41-.22A.4.4,0,0,0,455.56,411.79Zm-8.18-1.55h3.48v1.28h-3.48Zm5.6,11.11a.47.47,0,0,1-.33.1h0c-2.44,0-4.95,0-7.11,0a.3.3,0,0,1-.38-.35c0-2.13,0-4.3,0-6.4v-2.26h7.9v2.15c0,2.11,0,4.29,0,6.43A.45.45,0,0,1,453,421.35Z" transform="translate(-442.62 -409.33)"/><path class="cls-1" d="M449.56,414.8a.46.46,0,0,0-.44-.52h0a.41.41,0,0,0-.3.12.57.57,0,0,0-.15.41v4.25a.52.52,0,0,0,.17.41.39.39,0,0,0,.32.11.47.47,0,0,0,.41-.53q0-.74,0-1.47v-1.25C449.57,415.83,449.57,415.31,449.56,414.8Z" transform="translate(-442.62 -409.33)"/><path class="cls-1" d="M447.36,414.8a.47.47,0,0,0-.44-.52h0a.41.41,0,0,0-.3.12.53.53,0,0,0-.14.39v4.27c0,.31.17.52.44.52a.44.44,0,0,0,.3-.11.58.58,0,0,0,.15-.42V414.8Z" transform="translate(-442.62 -409.33)"/><path class="cls-1" d="M451.68,414.49a.4.4,0,0,0-.37-.21l-.11,0a.44.44,0,0,0-.33.45v4.33a.54.54,0,0,0,.14.38.43.43,0,0,0,.31.12.44.44,0,0,0,.43-.5c0-1.6,0-3,0-4.29A.58.58,0,0,0,451.68,414.49Z" transform="translate(-442.62 -409.33)"/></svg>
+									</button>
+								</div>
+								<div class="cart__item">
+									<div class="cart__item-img">
+										<a href="">
+											<img src="images/new3.jpg" alt="">
+										</a>
+									</div>
+									<a href="" class="cart__item-title">Отшелушивающий скраб для тела Re Ri Body scrub Отшелушивающий скраб</a>
+									<div class="cart__item-num">
+										<p>кол-во:</p>
+										<div class='cart__calc'>
+										   <button class='cart__calc-minus disabled'>-</button>
+										   <input type='text' value='1'>
+										   <button class='cart__calc-plus'>+</button>
+										</div>
+									</div>
+									<div class="cart__item-sum">
+										<p>сумма:</p>
+										<p class="cart__item-price">
+											1520
+											<span>руб.</span>
+										</p>
+									</div>
+									<button class="cart__item-delete">
+										<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13"><defs><style>.cls-1{fill:#e41f1d;}</style></defs><path class="cls-1" d="M455.56,411.79a.44.44,0,0,0-.48-.25h-3.32v-1.1a1,1,0,0,0-1.1-1.11h-3.11a1,1,0,0,0-1.08,1.07v1.14h-3.24a.62.62,0,0,0-.61.31v.3a.64.64,0,0,0,.67.29h1V415c0,1.94,0,4,0,5.94a1.28,1.28,0,0,0,.8,1.36h8.11A1.29,1.29,0,0,0,454,421c0-2,0-4,0-5.94v-2.6h1.18a.45.45,0,0,0,.41-.22A.4.4,0,0,0,455.56,411.79Zm-8.18-1.55h3.48v1.28h-3.48Zm5.6,11.11a.47.47,0,0,1-.33.1h0c-2.44,0-4.95,0-7.11,0a.3.3,0,0,1-.38-.35c0-2.13,0-4.3,0-6.4v-2.26h7.9v2.15c0,2.11,0,4.29,0,6.43A.45.45,0,0,1,453,421.35Z" transform="translate(-442.62 -409.33)"/><path class="cls-1" d="M449.56,414.8a.46.46,0,0,0-.44-.52h0a.41.41,0,0,0-.3.12.57.57,0,0,0-.15.41v4.25a.52.52,0,0,0,.17.41.39.39,0,0,0,.32.11.47.47,0,0,0,.41-.53q0-.74,0-1.47v-1.25C449.57,415.83,449.57,415.31,449.56,414.8Z" transform="translate(-442.62 -409.33)"/><path class="cls-1" d="M447.36,414.8a.47.47,0,0,0-.44-.52h0a.41.41,0,0,0-.3.12.53.53,0,0,0-.14.39v4.27c0,.31.17.52.44.52a.44.44,0,0,0,.3-.11.58.58,0,0,0,.15-.42V414.8Z" transform="translate(-442.62 -409.33)"/><path class="cls-1" d="M451.68,414.49a.4.4,0,0,0-.37-.21l-.11,0a.44.44,0,0,0-.33.45v4.33a.54.54,0,0,0,.14.38.43.43,0,0,0,.31.12.44.44,0,0,0,.43-.5c0-1.6,0-3,0-4.29A.58.58,0,0,0,451.68,414.49Z" transform="translate(-442.62 -409.33)"/></svg>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="cart__right">
+							<h2 class="cart__title">ИТОГО ВАШ ЗАКАЗ</h2>
+							<div class="cart__result">
+								<div class="cart__result-top">
+									<div class="cart__result-num">
+										Товаров в заказе:
+										<span> 5 шт.</span>
+									</div>
+									<button class="cart__result-delete">
+										<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13"><defs><style>.cls-1{fill:#463e8f;}</style></defs><path class="cls-1" d="M389.5,398.48a.47.47,0,0,0-.48-.25h-3.33v-1.11a1,1,0,0,0-1.09-1.1h-3.12a1,1,0,0,0-1.07,1.07c0,.23,0,.45,0,.69v.45h-3.24a.63.63,0,0,0-.62.3v.31a.68.68,0,0,0,.67.29h1v2.6c0,1.94,0,4,0,5.94A1.29,1.29,0,0,0,379,409h8.11a1.26,1.26,0,0,0,.8-1.36c0-2,0-4,0-5.94,0-.74,0-1.47,0-2.21v-.4h1.18a.47.47,0,0,0,.41-.22A.45.45,0,0,0,389.5,398.48Zm-8.19-1.54h3.49v1.28h-3.49Zm5.61,11.11a.47.47,0,0,1-.33.09h-7.13a.44.44,0,0,1-.29-.08.36.36,0,0,1-.08-.27v-8.35a.53.53,0,0,1,0-.13v-.18H387v8.58A.49.49,0,0,1,386.92,408.05Z" transform="translate(-376.55 -396.03)"/><path class="cls-1" d="M383.5,401.5a.46.46,0,0,0-.44-.52h0a.39.39,0,0,0-.3.12.53.53,0,0,0-.15.41v4.25a.55.55,0,0,0,.16.41.42.42,0,0,0,.32.11.47.47,0,0,0,.42-.53V401.5Z" transform="translate(-376.55 -396.03)"/><path class="cls-1" d="M381.29,401.5a.46.46,0,0,0-.44-.52h0a.39.39,0,0,0-.3.12.53.53,0,0,0-.14.39c0,1.34,0,2.74,0,4.27a.46.46,0,0,0,.43.52.41.41,0,0,0,.31-.12.58.58,0,0,0,.14-.41c0-.51,0-1,0-1.52V403C381.3,402.49,381.3,402,381.29,401.5Z" transform="translate(-376.55 -396.03)"/><path class="cls-1" d="M385.62,401.19a.42.42,0,0,0-.37-.21h-.11a.47.47,0,0,0-.34.46v4.32a.55.55,0,0,0,.15.39.43.43,0,0,0,.31.12.46.46,0,0,0,.43-.5v-4.3A.69.69,0,0,0,385.62,401.19Z" transform="translate(-376.55 -396.03)"/></svg>
+										<span>очистить корзину</span>
+									</button>
+								</div>
+								<div class="cart__result-cost">
+									<span>Стоимость товаров:</span>
+									<span>9 550 руб.</span>
+								</div>
+								<div class="cart__result-sale">
+									<span>Персональная скидка:</span>
+									<span>- 550 руб.</span>
+								</div>
+								<div class="cart__result-middle">
+									<span class="cart__result-all">Итого:</span>
+									<div class="cart__result-price">
+										9550 
+										<span> руб.</span>
+									</div>
+								</div>
+								<button class="cart__result-btn">
+									<span>ОФОРМИТЬ ЗАКАЗ</span>
+									<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.02 9"><defs><style>.cls-1{fill:#fff;}</style></defs><path class="cls-1" d="M307.62,367l-1.27,1.27,2.34,2.29h-8.83v1.87h8.82l-2.28,2.23,1.27,1.34,4.48-4.46Z" transform="translate(-296.13 -366.99)"/><path class="cls-1" d="M296.13,372.4h1.78v-1.82h-1.78Z" transform="translate(-296.13 -366.99)"/></svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="collection collection--bgnone">
+				<div class="container">
+					<p class="collection__title">РАНЕЕ ВЫ СМОТРЕЛИ</p>
+					<div class="collection__inner">
+						<div class="swiper-container swiper-container-initialized swiper-container-horizontal">
+							<div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+								<div class="swiper-slide swiper-slide-active" style="width: 219.6px; margin-right: 3px;">
+									<div class="card">
+										<a href="" class="card__img">
+											<img src="images/card1.jpg" alt="">
+										</a>
+										<div class="card__prices">
+											<div class="card__price card__price--ordinary">
+												<span>900 </span>
+												руб.
+											</div>
+											<div class="card__price card__price--new">
+												<span> </span>
+											</div>
+											<div class="card__price card__price--old">
+												<span> </span>
+											</div>
+										</div>
+										<a href="" class="card__title">Отшелушивающий скраб для тела Re Ri Body scrub</a>
+										<div class="card__bottom">
+											<a href="" class="card__cart">
+												<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.36 29.83"><defs><style>.cls-1{fill:#004c9a;}</style></defs><path class="cls-1" d="M310.25,434.83c-.06-.87-.14-1.75-.21-2.6l-.06-.75c-.09-1-.17-2-.26-3l-.54-6.4a.8.8,0,0,0-.82-.84.73.73,0,0,0-.53.24,1,1,0,0,0-.2.7c0,.6.09,1.21.14,1.8,0,.28.05.56.07.83.25,3,.49,5.91.74,8.86v.59H305v-.36a.43.43,0,0,1,0-.16l.36-3.27.92-8.23c.07-.6.13-1.21.2-1.81.17-1.52.34-3.09.52-4.63a.83.83,0,0,0-1-1.08h-3.37v-1.05c0-.56,0-1.1,0-1.63,0-.14,0-.27,0-.41a7.27,7.27,0,0,0-.09-1.41A5.1,5.1,0,0,0,297.1,406a5.16,5.16,0,0,0-3.34,1.64,5.09,5.09,0,0,0-1.35,3.47c0,.66,0,1.34,0,2,0,.3,0,.6,0,.89v.69h-3.48a.79.79,0,0,0-.88.81l-.42,3.79-.49,4.46-.51,4.53-.21,2c-.16,1.45-.33,2.95-.5,4.43a.86.86,0,0,0,1,1.15h13.78a.79.79,0,0,0,.81-.51.73.73,0,0,0-.07-.69.91.91,0,0,0-.77-.36H287.54l2-18h2.86v1c0,.51,0,1,0,1.48a.79.79,0,0,0,.39.68.77.77,0,0,0,.75,0,.75.75,0,0,0,.42-.74v-2.4h7.13v1c0,.51,0,1,0,1.47a.78.78,0,0,0,.42.69.74.74,0,0,0,.77,0,.78.78,0,0,0,.37-.72v-2.38h2.69l-.18,1.61-.3,2.73c-.13,1.11-.25,2.21-.37,3.31s-.28,2.45-.41,3.67c-.09.77-.17,1.54-.26,2.31-.17,1.59-.35,3.23-.54,4.84a1,1,0,0,0,.18.8,1,1,0,0,0,.74.26h5.12a1,1,0,0,0,.74-.25A.9.9,0,0,0,310.25,434.83Zm-9.15-21.52v1.35H294v-.3c0-.16,0-.31,0-.46,0-.33,0-.67,0-1v-.68a11.05,11.05,0,0,1,.07-1.72,3.51,3.51,0,0,1,3.79-2.94,3.57,3.57,0,0,1,3.26,3.46C301.11,411.77,301.1,412.55,301.1,413.31Z" transform="translate(-285.9 -405.97)"></path></svg>
+												<span>в корзину</span>
+											</a>
+											<button class="card__favorite"></button>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide swiper-slide-next" style="width: 219.6px; margin-right: 3px;">
+									<div class="card">
+										<a href="" class="card__img">
+											<img src="images/card2.jpg" alt="">
+										</a>
+										<div class="card__prices">
+											<div class="card__price card__price--ordinary">
+												<span>1400 </span>
+												руб.
+											</div>
+											<div class="card__price card__price--new">
+												<span> </span>
+											</div>
+											<div class="card__price card__price--old">
+												<span> </span>
+											</div>
+										</div>
+										<a href="" class="card__title">Солнцезащитный крем LAGOM Cellus Sun Gel SPF 50+PA+++</a>
+										<div class="card__bottom">
+											<a href="" class="card__cart">
+												<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.36 29.83"><defs><style>.cls-1{fill:#004c9a;}</style></defs><path class="cls-1" d="M310.25,434.83c-.06-.87-.14-1.75-.21-2.6l-.06-.75c-.09-1-.17-2-.26-3l-.54-6.4a.8.8,0,0,0-.82-.84.73.73,0,0,0-.53.24,1,1,0,0,0-.2.7c0,.6.09,1.21.14,1.8,0,.28.05.56.07.83.25,3,.49,5.91.74,8.86v.59H305v-.36a.43.43,0,0,1,0-.16l.36-3.27.92-8.23c.07-.6.13-1.21.2-1.81.17-1.52.34-3.09.52-4.63a.83.83,0,0,0-1-1.08h-3.37v-1.05c0-.56,0-1.1,0-1.63,0-.14,0-.27,0-.41a7.27,7.27,0,0,0-.09-1.41A5.1,5.1,0,0,0,297.1,406a5.16,5.16,0,0,0-3.34,1.64,5.09,5.09,0,0,0-1.35,3.47c0,.66,0,1.34,0,2,0,.3,0,.6,0,.89v.69h-3.48a.79.79,0,0,0-.88.81l-.42,3.79-.49,4.46-.51,4.53-.21,2c-.16,1.45-.33,2.95-.5,4.43a.86.86,0,0,0,1,1.15h13.78a.79.79,0,0,0,.81-.51.73.73,0,0,0-.07-.69.91.91,0,0,0-.77-.36H287.54l2-18h2.86v1c0,.51,0,1,0,1.48a.79.79,0,0,0,.39.68.77.77,0,0,0,.75,0,.75.75,0,0,0,.42-.74v-2.4h7.13v1c0,.51,0,1,0,1.47a.78.78,0,0,0,.42.69.74.74,0,0,0,.77,0,.78.78,0,0,0,.37-.72v-2.38h2.69l-.18,1.61-.3,2.73c-.13,1.11-.25,2.21-.37,3.31s-.28,2.45-.41,3.67c-.09.77-.17,1.54-.26,2.31-.17,1.59-.35,3.23-.54,4.84a1,1,0,0,0,.18.8,1,1,0,0,0,.74.26h5.12a1,1,0,0,0,.74-.25A.9.9,0,0,0,310.25,434.83Zm-9.15-21.52v1.35H294v-.3c0-.16,0-.31,0-.46,0-.33,0-.67,0-1v-.68a11.05,11.05,0,0,1,.07-1.72,3.51,3.51,0,0,1,3.79-2.94,3.57,3.57,0,0,1,3.26,3.46C301.11,411.77,301.1,412.55,301.1,413.31Z" transform="translate(-285.9 -405.97)"></path></svg>
+												<span>в корзину</span>
+											</a>
+											<button class="card__favorite"></button>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide" style="width: 219.6px; margin-right: 3px;">
+									<div class="card">
+										<svg class="card-sale" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.76 32.76"><defs><style>.cls-1{fill:#e41515;}.cls-2{fill:#fff;}</style></defs><circle class="cls-1" cx="16.38" cy="16.38" r="16.38"></circle><path class="cls-2" d="M289.87,424a3.07,3.07,0,0,1-2.38-1l.9-.91a2,2,0,0,0,1.57.71,1.18,1.18,0,0,0,.75-.2.69.69,0,0,0,.24-.55.67.67,0,0,0-.14-.43.9.9,0,0,0-.59-.24l-.62-.08a2.38,2.38,0,0,1-1.46-.6,1.74,1.74,0,0,1-.46-1.27,1.85,1.85,0,0,1,.16-.78,1.79,1.79,0,0,1,.46-.6,2.09,2.09,0,0,1,.74-.39,3,3,0,0,1,1-.14,3.21,3.21,0,0,1,1.25.22,2.55,2.55,0,0,1,.93.66l-.91.92a1.87,1.87,0,0,0-.54-.42,1.77,1.77,0,0,0-.81-.17,1.24,1.24,0,0,0-.68.16.53.53,0,0,0-.23.45.55.55,0,0,0,.18.46,1.28,1.28,0,0,0,.57.21l.62.09a2.75,2.75,0,0,1,1.44.6,1.68,1.68,0,0,1,.47,1.27,2,2,0,0,1-.16.83,1.81,1.81,0,0,1-.48.65,2.14,2.14,0,0,1-.76.42A3.41,3.41,0,0,1,289.87,424Z" transform="translate(-281.7 -404.4)"></path><path class="cls-2" d="M297.32,423.92l-.45-1.5h-2.09l-.45,1.5h-1.39l2.07-6.28h1.69l2.05,6.28Zm-1.48-5h0l-.69,2.38h1.44Z" transform="translate(-281.7 -404.4)"></path><path class="cls-2" d="M299.62,423.92v-6.28H301v5.06h2.39v1.22Z" transform="translate(-281.7 -404.4)"></path><path class="cls-2" d="M304.39,423.92v-6.28h4.27v1.21h-2.9v1.28h2.49v1.21h-2.49v1.36h2.9v1.22Z" transform="translate(-281.7 -404.4)"></path></svg>
+										<a href="" class="card__img">
+											<img src="images/card3.jpg" alt="">
+										</a>
+										<div class="card__prices">
+											<div class="card__price card__price--ordinary">
+												<span></span>
+											</div>
+											<div class="card__price card__price--new">
+												<span>1600 </span>
+												руб.
+											</div>
+											<div class="card__price card__price--old">
+												<span>2100 </span>
+												руб.
+											</div>
+										</div>
+										<a href="" class="card__title">Лосьон ILLIYOON Ceramide ato Lotion Лосьон ILLIYOON Ceramide ato Lotion</a>
+										<div class="card__bottom">
+											<a href="" class="card__cart">
+												<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.36 29.83"><defs><style>.cls-1{fill:#004c9a;}</style></defs><path class="cls-1" d="M310.25,434.83c-.06-.87-.14-1.75-.21-2.6l-.06-.75c-.09-1-.17-2-.26-3l-.54-6.4a.8.8,0,0,0-.82-.84.73.73,0,0,0-.53.24,1,1,0,0,0-.2.7c0,.6.09,1.21.14,1.8,0,.28.05.56.07.83.25,3,.49,5.91.74,8.86v.59H305v-.36a.43.43,0,0,1,0-.16l.36-3.27.92-8.23c.07-.6.13-1.21.2-1.81.17-1.52.34-3.09.52-4.63a.83.83,0,0,0-1-1.08h-3.37v-1.05c0-.56,0-1.1,0-1.63,0-.14,0-.27,0-.41a7.27,7.27,0,0,0-.09-1.41A5.1,5.1,0,0,0,297.1,406a5.16,5.16,0,0,0-3.34,1.64,5.09,5.09,0,0,0-1.35,3.47c0,.66,0,1.34,0,2,0,.3,0,.6,0,.89v.69h-3.48a.79.79,0,0,0-.88.81l-.42,3.79-.49,4.46-.51,4.53-.21,2c-.16,1.45-.33,2.95-.5,4.43a.86.86,0,0,0,1,1.15h13.78a.79.79,0,0,0,.81-.51.73.73,0,0,0-.07-.69.91.91,0,0,0-.77-.36H287.54l2-18h2.86v1c0,.51,0,1,0,1.48a.79.79,0,0,0,.39.68.77.77,0,0,0,.75,0,.75.75,0,0,0,.42-.74v-2.4h7.13v1c0,.51,0,1,0,1.47a.78.78,0,0,0,.42.69.74.74,0,0,0,.77,0,.78.78,0,0,0,.37-.72v-2.38h2.69l-.18,1.61-.3,2.73c-.13,1.11-.25,2.21-.37,3.31s-.28,2.45-.41,3.67c-.09.77-.17,1.54-.26,2.31-.17,1.59-.35,3.23-.54,4.84a1,1,0,0,0,.18.8,1,1,0,0,0,.74.26h5.12a1,1,0,0,0,.74-.25A.9.9,0,0,0,310.25,434.83Zm-9.15-21.52v1.35H294v-.3c0-.16,0-.31,0-.46,0-.33,0-.67,0-1v-.68a11.05,11.05,0,0,1,.07-1.72,3.51,3.51,0,0,1,3.79-2.94,3.57,3.57,0,0,1,3.26,3.46C301.11,411.77,301.1,412.55,301.1,413.31Z" transform="translate(-285.9 -405.97)"></path></svg>
+												<span>в корзину</span>
+											</a>
+											<button class="card__favorite"></button>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide" style="width: 219.6px; margin-right: 3px;">
+									<div class="card">
+										<a href="" class="card__img">
+											<img src="images/card4.jpg" alt="">
+										</a>
+										<div class="card__prices">
+											<div class="card__price card__price--ordinary">
+												<span>450 </span>
+												руб.
+											</div>
+											<div class="card__price card__price--new">
+												<span></span>
+											</div>
+											<div class="card__price card__price--old">
+												<span></span>
+											</div>
+										</div>
+										<a href="" class="card__title">Защитный гель с церамидами ILLIYOON Ceramide Ato Soothing Gel</a>
+										<div class="card__bottom">
+											<a href="" class="card__cart">
+												<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.36 29.83"><defs><style>.cls-1{fill:#004c9a;}</style></defs><path class="cls-1" d="M310.25,434.83c-.06-.87-.14-1.75-.21-2.6l-.06-.75c-.09-1-.17-2-.26-3l-.54-6.4a.8.8,0,0,0-.82-.84.73.73,0,0,0-.53.24,1,1,0,0,0-.2.7c0,.6.09,1.21.14,1.8,0,.28.05.56.07.83.25,3,.49,5.91.74,8.86v.59H305v-.36a.43.43,0,0,1,0-.16l.36-3.27.92-8.23c.07-.6.13-1.21.2-1.81.17-1.52.34-3.09.52-4.63a.83.83,0,0,0-1-1.08h-3.37v-1.05c0-.56,0-1.1,0-1.63,0-.14,0-.27,0-.41a7.27,7.27,0,0,0-.09-1.41A5.1,5.1,0,0,0,297.1,406a5.16,5.16,0,0,0-3.34,1.64,5.09,5.09,0,0,0-1.35,3.47c0,.66,0,1.34,0,2,0,.3,0,.6,0,.89v.69h-3.48a.79.79,0,0,0-.88.81l-.42,3.79-.49,4.46-.51,4.53-.21,2c-.16,1.45-.33,2.95-.5,4.43a.86.86,0,0,0,1,1.15h13.78a.79.79,0,0,0,.81-.51.73.73,0,0,0-.07-.69.91.91,0,0,0-.77-.36H287.54l2-18h2.86v1c0,.51,0,1,0,1.48a.79.79,0,0,0,.39.68.77.77,0,0,0,.75,0,.75.75,0,0,0,.42-.74v-2.4h7.13v1c0,.51,0,1,0,1.47a.78.78,0,0,0,.42.69.74.74,0,0,0,.77,0,.78.78,0,0,0,.37-.72v-2.38h2.69l-.18,1.61-.3,2.73c-.13,1.11-.25,2.21-.37,3.31s-.28,2.45-.41,3.67c-.09.77-.17,1.54-.26,2.31-.17,1.59-.35,3.23-.54,4.84a1,1,0,0,0,.18.8,1,1,0,0,0,.74.26h5.12a1,1,0,0,0,.74-.25A.9.9,0,0,0,310.25,434.83Zm-9.15-21.52v1.35H294v-.3c0-.16,0-.31,0-.46,0-.33,0-.67,0-1v-.68a11.05,11.05,0,0,1,.07-1.72,3.51,3.51,0,0,1,3.79-2.94,3.57,3.57,0,0,1,3.26,3.46C301.11,411.77,301.1,412.55,301.1,413.31Z" transform="translate(-285.9 -405.97)"></path></svg>
+												<span>в корзину</span>
+											</a>
+											<button class="card__favorite card__favorite--active"></button>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide" style="width: 219.6px; margin-right: 3px;">
+									<div class="card">
+										<a href="" class="card__img">
+											<img src="images/card1.jpg" alt="">
+										</a>
+										<div class="card__prices">
+											<div class="card__price card__price--ordinary">
+												<span>900 </span>
+												руб.
+											</div>
+											<div class="card__price card__price--new">
+												<span> </span>
+											</div>
+											<div class="card__price card__price--old">
+												<span> </span>
+											</div>
+										</div>
+										<a href="" class="card__title">Отшелушивающий скраб для тела Re Ri Body scrub</a>
+										<div class="card__bottom">
+											<a href="" class="card__cart">
+												<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.36 29.83"><defs><style>.cls-1{fill:#004c9a;}</style></defs><path class="cls-1" d="M310.25,434.83c-.06-.87-.14-1.75-.21-2.6l-.06-.75c-.09-1-.17-2-.26-3l-.54-6.4a.8.8,0,0,0-.82-.84.73.73,0,0,0-.53.24,1,1,0,0,0-.2.7c0,.6.09,1.21.14,1.8,0,.28.05.56.07.83.25,3,.49,5.91.74,8.86v.59H305v-.36a.43.43,0,0,1,0-.16l.36-3.27.92-8.23c.07-.6.13-1.21.2-1.81.17-1.52.34-3.09.52-4.63a.83.83,0,0,0-1-1.08h-3.37v-1.05c0-.56,0-1.1,0-1.63,0-.14,0-.27,0-.41a7.27,7.27,0,0,0-.09-1.41A5.1,5.1,0,0,0,297.1,406a5.16,5.16,0,0,0-3.34,1.64,5.09,5.09,0,0,0-1.35,3.47c0,.66,0,1.34,0,2,0,.3,0,.6,0,.89v.69h-3.48a.79.79,0,0,0-.88.81l-.42,3.79-.49,4.46-.51,4.53-.21,2c-.16,1.45-.33,2.95-.5,4.43a.86.86,0,0,0,1,1.15h13.78a.79.79,0,0,0,.81-.51.73.73,0,0,0-.07-.69.91.91,0,0,0-.77-.36H287.54l2-18h2.86v1c0,.51,0,1,0,1.48a.79.79,0,0,0,.39.68.77.77,0,0,0,.75,0,.75.75,0,0,0,.42-.74v-2.4h7.13v1c0,.51,0,1,0,1.47a.78.78,0,0,0,.42.69.74.74,0,0,0,.77,0,.78.78,0,0,0,.37-.72v-2.38h2.69l-.18,1.61-.3,2.73c-.13,1.11-.25,2.21-.37,3.31s-.28,2.45-.41,3.67c-.09.77-.17,1.54-.26,2.31-.17,1.59-.35,3.23-.54,4.84a1,1,0,0,0,.18.8,1,1,0,0,0,.74.26h5.12a1,1,0,0,0,.74-.25A.9.9,0,0,0,310.25,434.83Zm-9.15-21.52v1.35H294v-.3c0-.16,0-.31,0-.46,0-.33,0-.67,0-1v-.68a11.05,11.05,0,0,1,.07-1.72,3.51,3.51,0,0,1,3.79-2.94,3.57,3.57,0,0,1,3.26,3.46C301.11,411.77,301.1,412.55,301.1,413.31Z" transform="translate(-285.9 -405.97)"></path></svg>
+												<span>в корзину</span>
+											</a>
+											<button class="card__favorite"></button>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide" style="width: 219.6px; margin-right: 3px;">
+									<div class="card">
+										<a href="" class="card__img">
+											<img src="images/card2.jpg" alt="">
+										</a>
+										<div class="card__prices">
+											<div class="card__price card__price--ordinary">
+												<span>1400 </span>
+												руб.
+											</div>
+											<div class="card__price card__price--new">
+												<span> </span>
+											</div>
+											<div class="card__price card__price--old">
+												<span> </span>
+											</div>
+										</div>
+										<a href="" class="card__title">Солнцезащитный крем LAGOM Cellus Sun Gel SPF 50+PA+++</a>
+										<div class="card__bottom">
+											<a href="" class="card__cart">
+												<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.36 29.83"><defs><style>.cls-1{fill:#004c9a;}</style></defs><path class="cls-1" d="M310.25,434.83c-.06-.87-.14-1.75-.21-2.6l-.06-.75c-.09-1-.17-2-.26-3l-.54-6.4a.8.8,0,0,0-.82-.84.73.73,0,0,0-.53.24,1,1,0,0,0-.2.7c0,.6.09,1.21.14,1.8,0,.28.05.56.07.83.25,3,.49,5.91.74,8.86v.59H305v-.36a.43.43,0,0,1,0-.16l.36-3.27.92-8.23c.07-.6.13-1.21.2-1.81.17-1.52.34-3.09.52-4.63a.83.83,0,0,0-1-1.08h-3.37v-1.05c0-.56,0-1.1,0-1.63,0-.14,0-.27,0-.41a7.27,7.27,0,0,0-.09-1.41A5.1,5.1,0,0,0,297.1,406a5.16,5.16,0,0,0-3.34,1.64,5.09,5.09,0,0,0-1.35,3.47c0,.66,0,1.34,0,2,0,.3,0,.6,0,.89v.69h-3.48a.79.79,0,0,0-.88.81l-.42,3.79-.49,4.46-.51,4.53-.21,2c-.16,1.45-.33,2.95-.5,4.43a.86.86,0,0,0,1,1.15h13.78a.79.79,0,0,0,.81-.51.73.73,0,0,0-.07-.69.91.91,0,0,0-.77-.36H287.54l2-18h2.86v1c0,.51,0,1,0,1.48a.79.79,0,0,0,.39.68.77.77,0,0,0,.75,0,.75.75,0,0,0,.42-.74v-2.4h7.13v1c0,.51,0,1,0,1.47a.78.78,0,0,0,.42.69.74.74,0,0,0,.77,0,.78.78,0,0,0,.37-.72v-2.38h2.69l-.18,1.61-.3,2.73c-.13,1.11-.25,2.21-.37,3.31s-.28,2.45-.41,3.67c-.09.77-.17,1.54-.26,2.31-.17,1.59-.35,3.23-.54,4.84a1,1,0,0,0,.18.8,1,1,0,0,0,.74.26h5.12a1,1,0,0,0,.74-.25A.9.9,0,0,0,310.25,434.83Zm-9.15-21.52v1.35H294v-.3c0-.16,0-.31,0-.46,0-.33,0-.67,0-1v-.68a11.05,11.05,0,0,1,.07-1.72,3.51,3.51,0,0,1,3.79-2.94,3.57,3.57,0,0,1,3.26,3.46C301.11,411.77,301.1,412.55,301.1,413.31Z" transform="translate(-285.9 -405.97)"></path></svg>
+												<span>в корзину</span>
+											</a>
+											<button class="card__favorite"></button>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide" style="width: 219.6px; margin-right: 3px;">
+									<div class="card">
+										<svg class="card-sale" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.76 32.76"><defs><style>.cls-1{fill:#e41515;}.cls-2{fill:#fff;}</style></defs><circle class="cls-1" cx="16.38" cy="16.38" r="16.38"></circle><path class="cls-2" d="M289.87,424a3.07,3.07,0,0,1-2.38-1l.9-.91a2,2,0,0,0,1.57.71,1.18,1.18,0,0,0,.75-.2.69.69,0,0,0,.24-.55.67.67,0,0,0-.14-.43.9.9,0,0,0-.59-.24l-.62-.08a2.38,2.38,0,0,1-1.46-.6,1.74,1.74,0,0,1-.46-1.27,1.85,1.85,0,0,1,.16-.78,1.79,1.79,0,0,1,.46-.6,2.09,2.09,0,0,1,.74-.39,3,3,0,0,1,1-.14,3.21,3.21,0,0,1,1.25.22,2.55,2.55,0,0,1,.93.66l-.91.92a1.87,1.87,0,0,0-.54-.42,1.77,1.77,0,0,0-.81-.17,1.24,1.24,0,0,0-.68.16.53.53,0,0,0-.23.45.55.55,0,0,0,.18.46,1.28,1.28,0,0,0,.57.21l.62.09a2.75,2.75,0,0,1,1.44.6,1.68,1.68,0,0,1,.47,1.27,2,2,0,0,1-.16.83,1.81,1.81,0,0,1-.48.65,2.14,2.14,0,0,1-.76.42A3.41,3.41,0,0,1,289.87,424Z" transform="translate(-281.7 -404.4)"></path><path class="cls-2" d="M297.32,423.92l-.45-1.5h-2.09l-.45,1.5h-1.39l2.07-6.28h1.69l2.05,6.28Zm-1.48-5h0l-.69,2.38h1.44Z" transform="translate(-281.7 -404.4)"></path><path class="cls-2" d="M299.62,423.92v-6.28H301v5.06h2.39v1.22Z" transform="translate(-281.7 -404.4)"></path><path class="cls-2" d="M304.39,423.92v-6.28h4.27v1.21h-2.9v1.28h2.49v1.21h-2.49v1.36h2.9v1.22Z" transform="translate(-281.7 -404.4)"></path></svg>
+										<a href="" class="card__img">
+											<img src="images/card3.jpg" alt="">
+										</a>
+										<div class="card__prices">
+											<div class="card__price card__price--ordinary">
+												<span></span>
+											</div>
+											<div class="card__price card__price--new">
+												<span>1600 </span>
+												руб.
+											</div>
+											<div class="card__price card__price--old">
+												<span>2100 </span>
+												руб.
+											</div>
+										</div>
+										<a href="" class="card__title">Лосьон ILLIYOON Ceramide ato Lotion Лосьон ILLIYOON Ceramide ato Lotion</a>
+										<div class="card__bottom">
+											<a href="" class="card__cart">
+												<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.36 29.83"><defs><style>.cls-1{fill:#004c9a;}</style></defs><path class="cls-1" d="M310.25,434.83c-.06-.87-.14-1.75-.21-2.6l-.06-.75c-.09-1-.17-2-.26-3l-.54-6.4a.8.8,0,0,0-.82-.84.73.73,0,0,0-.53.24,1,1,0,0,0-.2.7c0,.6.09,1.21.14,1.8,0,.28.05.56.07.83.25,3,.49,5.91.74,8.86v.59H305v-.36a.43.43,0,0,1,0-.16l.36-3.27.92-8.23c.07-.6.13-1.21.2-1.81.17-1.52.34-3.09.52-4.63a.83.83,0,0,0-1-1.08h-3.37v-1.05c0-.56,0-1.1,0-1.63,0-.14,0-.27,0-.41a7.27,7.27,0,0,0-.09-1.41A5.1,5.1,0,0,0,297.1,406a5.16,5.16,0,0,0-3.34,1.64,5.09,5.09,0,0,0-1.35,3.47c0,.66,0,1.34,0,2,0,.3,0,.6,0,.89v.69h-3.48a.79.79,0,0,0-.88.81l-.42,3.79-.49,4.46-.51,4.53-.21,2c-.16,1.45-.33,2.95-.5,4.43a.86.86,0,0,0,1,1.15h13.78a.79.79,0,0,0,.81-.51.73.73,0,0,0-.07-.69.91.91,0,0,0-.77-.36H287.54l2-18h2.86v1c0,.51,0,1,0,1.48a.79.79,0,0,0,.39.68.77.77,0,0,0,.75,0,.75.75,0,0,0,.42-.74v-2.4h7.13v1c0,.51,0,1,0,1.47a.78.78,0,0,0,.42.69.74.74,0,0,0,.77,0,.78.78,0,0,0,.37-.72v-2.38h2.69l-.18,1.61-.3,2.73c-.13,1.11-.25,2.21-.37,3.31s-.28,2.45-.41,3.67c-.09.77-.17,1.54-.26,2.31-.17,1.59-.35,3.23-.54,4.84a1,1,0,0,0,.18.8,1,1,0,0,0,.74.26h5.12a1,1,0,0,0,.74-.25A.9.9,0,0,0,310.25,434.83Zm-9.15-21.52v1.35H294v-.3c0-.16,0-.31,0-.46,0-.33,0-.67,0-1v-.68a11.05,11.05,0,0,1,.07-1.72,3.51,3.51,0,0,1,3.79-2.94,3.57,3.57,0,0,1,3.26,3.46C301.11,411.77,301.1,412.55,301.1,413.31Z" transform="translate(-285.9 -405.97)"></path></svg>
+												<span>в корзину</span>
+											</a>
+											<button class="card__favorite"></button>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide" style="width: 219.6px; margin-right: 3px;">
+									<div class="card">
+										<a href="" class="card__img">
+											<img src="images/card4.jpg" alt="">
+										</a>
+										<div class="card__prices">
+											<div class="card__price card__price--ordinary">
+												<span>450 </span>
+												руб.
+											</div>
+											<div class="card__price card__price--new">
+												<span></span>
+											</div>
+											<div class="card__price card__price--old">
+												<span></span>
+											</div>
+										</div>
+										<a href="" class="card__title">Защитный гель с церамидами ILLIYOON Ceramide Ato Soothing Gel</a>
+										<div class="card__bottom">
+											<a href="" class="card__cart">
+												<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.36 29.83"><defs><style>.cls-1{fill:#004c9a;}</style></defs><path class="cls-1" d="M310.25,434.83c-.06-.87-.14-1.75-.21-2.6l-.06-.75c-.09-1-.17-2-.26-3l-.54-6.4a.8.8,0,0,0-.82-.84.73.73,0,0,0-.53.24,1,1,0,0,0-.2.7c0,.6.09,1.21.14,1.8,0,.28.05.56.07.83.25,3,.49,5.91.74,8.86v.59H305v-.36a.43.43,0,0,1,0-.16l.36-3.27.92-8.23c.07-.6.13-1.21.2-1.81.17-1.52.34-3.09.52-4.63a.83.83,0,0,0-1-1.08h-3.37v-1.05c0-.56,0-1.1,0-1.63,0-.14,0-.27,0-.41a7.27,7.27,0,0,0-.09-1.41A5.1,5.1,0,0,0,297.1,406a5.16,5.16,0,0,0-3.34,1.64,5.09,5.09,0,0,0-1.35,3.47c0,.66,0,1.34,0,2,0,.3,0,.6,0,.89v.69h-3.48a.79.79,0,0,0-.88.81l-.42,3.79-.49,4.46-.51,4.53-.21,2c-.16,1.45-.33,2.95-.5,4.43a.86.86,0,0,0,1,1.15h13.78a.79.79,0,0,0,.81-.51.73.73,0,0,0-.07-.69.91.91,0,0,0-.77-.36H287.54l2-18h2.86v1c0,.51,0,1,0,1.48a.79.79,0,0,0,.39.68.77.77,0,0,0,.75,0,.75.75,0,0,0,.42-.74v-2.4h7.13v1c0,.51,0,1,0,1.47a.78.78,0,0,0,.42.69.74.74,0,0,0,.77,0,.78.78,0,0,0,.37-.72v-2.38h2.69l-.18,1.61-.3,2.73c-.13,1.11-.25,2.21-.37,3.31s-.28,2.45-.41,3.67c-.09.77-.17,1.54-.26,2.31-.17,1.59-.35,3.23-.54,4.84a1,1,0,0,0,.18.8,1,1,0,0,0,.74.26h5.12a1,1,0,0,0,.74-.25A.9.9,0,0,0,310.25,434.83Zm-9.15-21.52v1.35H294v-.3c0-.16,0-.31,0-.46,0-.33,0-.67,0-1v-.68a11.05,11.05,0,0,1,.07-1.72,3.51,3.51,0,0,1,3.79-2.94,3.57,3.57,0,0,1,3.26,3.46C301.11,411.77,301.1,412.55,301.1,413.31Z" transform="translate(-285.9 -405.97)"></path></svg>
+												<span>в корзину</span>
+											</a>
+											<button class="card__favorite card__favorite--active"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+						<div class="swiper-button-prev swiper-button-disabled" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"></div>
+						<div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+		
+	<footer class="footer">
+		<div class="footer__top">
+			<div class="container">
+				<div class="footer__top-inner">
+					<div class="footer__col">
+						<p class="footer__title">Наш магазин</p>
+						<a href="" class="footer__instagram">
+							<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.01 14"><defs><style>.cls-1{fill:#004d9b;}</style></defs><path class="cls-1" d="M305,423.66a4.18,4.18,0,0,1-1.13,2.94,4.14,4.14,0,0,1-2.94,1.13c-1.15.06-4.62.06-5.77,0a4.18,4.18,0,0,1-2.94-1.13,4.14,4.14,0,0,1-1.13-2.94c-.07-1.15-.07-4.62,0-5.77a3.88,3.88,0,0,1,4.07-4.07c1.15-.06,4.62-.06,5.77,0A4.23,4.23,0,0,1,303.9,415a4.16,4.16,0,0,1,1.13,2.94C305.09,419,305.09,422.51,305,423.66Zm-1.21-2.88a15.67,15.67,0,0,0-.28-4.13,2.34,2.34,0,0,0-1.34-1.33,30.53,30.53,0,0,0-8.25,0,2.32,2.32,0,0,0-1.33,1.33,30.53,30.53,0,0,0,0,8.25,2.37,2.37,0,0,0,1.33,1.34,30.53,30.53,0,0,0,8.25,0,2.39,2.39,0,0,0,1.34-1.34A15.6,15.6,0,0,0,303.82,420.78Zm-2.15,0a3.59,3.59,0,1,1-3.59-3.59A3.59,3.59,0,0,1,301.67,420.78Zm-1.26,0a2.34,2.34,0,1,0-2.33,2.33A2.34,2.34,0,0,0,300.41,420.78Zm1.4-2.9a.84.84,0,1,1,.84-.84A.84.84,0,0,1,301.81,417.88Z" transform="translate(-291.07 -413.77)"></path></svg>
+						</a>
+						<a href="" class="footer__address">г. Уссурийск , ул. Пушкина, 68</a>
+						<p class="footer__address-hint">вход со стороны Плеханова</p>
+						<p class="footer__address-time">Ежедневно с 09:00 до 19:00</p>
+						<div class="footer__phones">
+							<a href="tel:+79532061822" class="footer__phone">
+								<span>+7 953 206 1822</span>
+							</a>
+							<a href="" class="footer__whatsapp">
+								<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.25 12.25"><defs><style>.cls-1{fill:#004d9b;}</style></defs><path class="cls-1" d="M304.2,420.72a6.12,6.12,0,0,1-6.13,6.07h0a6.06,6.06,0,0,1-2.9-.73l-3.22.84.86-3.14a6.08,6.08,0,0,1,5.26-9.11,6,6,0,0,1,4.29,1.78A6.08,6.08,0,0,1,304.2,420.72Zm-1,0a5.07,5.07,0,1,0-9.37,2.69l.12.19-.51,1.86,1.91-.5.18.11a5,5,0,0,0,2.57.7A5.1,5.1,0,0,0,303.17,420.72Zm-2,1.45a1.46,1.46,0,0,1-.09.73,1.6,1.6,0,0,1-1,.72,3,3,0,0,1-1.83-.38A6.84,6.84,0,0,1,295.6,421a3.07,3.07,0,0,1-.62-1.57,1.7,1.7,0,0,1,.54-1.27.54.54,0,0,1,.4-.19h.29c.09,0,.22,0,.34.26s.43,1.05.47,1.12a.28.28,0,0,1,0,.27c-.29.58-.6.56-.44.83a4.09,4.09,0,0,0,2.06,1.8.23.23,0,0,0,.33,0c.09-.1.38-.44.48-.59s.2-.13.34-.08.89.42,1,.49S301.09,422.11,301.13,422.17Z" transform="translate(-291.95 -414.65)"></path></svg>
+								<span>WhatsApp</span>
+							</a>
+						</div>
+						<a href="mailto:hello@korcosmet.ru" class="footer__mail">hello@korcosmet.ru</a>
+						<p class="footer__protect">Все права защищены © 2021 KOREAN COSMETICS <br>Копирование материалов с сайта запрещено.</p>
+						<p class="footer__by">
+							Разработка сайта - <a href="http://www.kefirok.ru" target="_blank"> студия Кефирок</a>. 2021                 
+						</p>
+					</div>
+					<div class="footer__col">
+						<p class="footer__title">КАТАЛОГ ТОВАРОВ</p>
+						<div class="footer__items">
+							<div class="footer__items-col">
+								<a href="" class="footer__item">Уход за волосами</a>
+								<a href="" class="footer__item">Уход за телом</a>
+								<a href="" class="footer__item">Косметика для лица</a>
+								<a href="" class="footer__item">Декоративная косметика</a>
+								<a href="" class="footer__item">Наборы</a>
+							</div>
+							<div class="footer__items-col">
+								<a href="" class="footer__item">Аксессуары</a>
+								<a href="" class="footer__item">Для мужчин</a>
+								<a href="" class="footer__item">Детские товары</a>
+								<a href="" class="footer__item">Бытовая химия</a>
+							</div>
+						</div>
+						<div class="footer__pay">
+							<span class="footer__pay-title">ПРИНИМАЕМ К ОПЛАТЕ:</span>
+							<a href=""><img src="images/payment.png" alt="" class="footer__pay-img"></a>
+						</div>
+					</div>
+					<div class="footer__col">
+						<p class="footer__title">ИНФОРМАЦИЯ</p>
+						<a href="" class="footer__item">Оплата</a>
+						<a href="" class="footer__item">Доставка</a>
+						<a href="" class="footer__item">О магазине</a>
+						<a href="" class="footer__item">Блог</a>
+						<a href="" class="footer__item">Контакты</a>
+						<a href="" class="footer__item">Политика конфиденциальности</a>
+						<a href="" class="footer__item">Публичная оферта</a>
+					</div>
+				</div>  
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="container">
+				<div class="footer__bottom-inner">
+					<div class="footer__agree">
+						Вся представленная на сайте информация, касающаяся технических характеристик, наличия на складе, стоимости товаров, носит информационный характер и ни при каких условиях не является публичной офертой, определяемой <br> положениями Статьи 437(2) Гражданского кодекса РФ. Нажатие на кнопку "купить", а также последующее заполнение тех или иных форм, не накладывает на владельцев сайта никаких обязательств.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/nouislider.min.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src='js/jquery.mCustomScrollbar.concat.min.js'></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/index.js"></script>
+	</div>
+
+
+
+
+</body>
+</html>

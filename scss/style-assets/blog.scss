@@ -1,0 +1,273 @@
+.blog {
+    padding-top: 22px;
+    margin-top: 34px;
+    border-top: 1px solid rgba(#d5dae0, 0.6);
+    &__items {
+        display: grid;
+        column-gap: 27px;
+        row-gap: 63px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    &__item {
+        box-shadow: 0px 3px 5px 0px rgba(0, 25, 52, 0.1);
+        &:hover {
+            & .blog__item-content {
+                border-color: #004b9b;
+            }
+        }
+        &-img {
+            height: 170px;
+            position: relative;
+            & a {
+                display: block;
+                height: 100%;
+            }
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-hashtag {
+            padding: 0 28px;
+            height: 36px;
+            background-color: #ffffff;
+            box-shadow: 0px 3px 5px 0px rgba(0, 43, 89, 0.05);
+            border-radius: 1px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            font-size: 14px;
+            font-weight: 700;
+            color: #191919;
+            @include flex;
+            justify-content: center;
+            @include al-i(center);
+            white-space: nowrap;
+            z-index: 2;
+        }
+        &-content {
+            text-align: center;
+            background-color: #fff;
+            padding-bottom: 35px;
+            position: relative;
+            border: 1px solid transparent;
+            border-top: none;
+            padding-top: 31px;
+        }
+        &-title {
+            font-size: 17px;
+            line-height: 22px;
+            height: 44px;
+            font-weight: 600;
+            color: #004b9b;
+            display: block;
+            -webkit-line-clamp: 2;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            &:hover {
+                color: #003772;
+            }
+        }
+        &-desc {
+            font-size: 13px;
+            line-height: 18px;
+            height: 36px;
+            font-weight: 400;
+            color: #343434;
+            margin-top: 10px;
+            -webkit-line-clamp: 2;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        &-date {
+            font-size: 11px;
+            margin-top: 18px;
+            font-weight: 400;
+            color: #343434;
+        }
+        &-link {
+            width: 134px;
+            height: 33px;
+            background-color: #004b9b;
+            box-shadow: 0px 3px 5px 0px rgba(0, 43, 89, 0.05);
+            border-radius: 1px;
+            margin-top: 17px;
+            @include flex;
+            justify-content: center;
+            @include al-i(center);
+            font-size: 10px;
+            line-height: 16px;
+            font-weight: 600;
+            color: #ffffff;
+            margin-left: auto;
+            margin-right: auto;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            &:hover {
+                background-color: #ffffff;
+                border: 1px solid #004b9b;
+                color: #004b9b;
+            }
+        }
+    }
+    &__content {
+        position: relative;
+        margin-top: 12px;
+        padding-top: 36px;
+        padding-bottom: 60px;
+        border-top: 1px solid rgba(#d5dae0, 0.6);
+        &:after {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            background-image: url(../images/blog_bg.png);
+            z-index: -1;
+            opacity: 0.05;
+            left: 0;
+            top: 0;
+        }
+    }
+}
+
+.blog-theme {
+    @include flex;
+    &__title {
+        font-size: 16px;
+        margin-right: 22px;
+        font-weight: 700;
+        color: #191919;
+        margin-top: 9px;
+        white-space: nowrap;
+    }
+    &__items {
+        @include flex;
+        @include al-i(center);
+        @include wrap;
+    }
+    &__item {
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 700;
+        color: #191919;
+        padding: 0 25px;
+        @include flex;
+        justify-content: center;
+        @include al-i(center);
+        margin-right: 16px;
+        margin-bottom: 10px;
+        height: 36px;
+        border: 1px solid #d5dae0;
+        &:hover {
+            border-color: #005ec3;
+            cursor: pointer;
+        }
+    }
+    &__item--blue {
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 700;
+        color: #004fa3;
+        margin-right: 4px;
+    }
+    &__item--active {
+        background-color: #005ec3;
+        color: #fff;
+        pointer-events: none;
+        border-color: #005ec3;
+    }
+}
+
+.pagination--mt60 {
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 1150px) {
+    .blog {
+        &__items {
+            column-gap: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .blog {
+        &__items {
+            grid-template-columns: 1fr 1fr;
+        }
+        &__item--hide {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .blog {
+        margin-top: 22px;
+        padding-top: 15px;
+        &__items {
+            grid-template-columns: 1fr;
+        }
+        &__item--hide-mob {
+            display: none;
+        }
+        &__item {
+            &-hashtag {
+                font-size: 11.6px;
+                padding: 0 24px;
+            }
+            &:hover .blog__item-content {
+                border-color: transparent;
+            }
+            &-content {
+                padding-top: 31px;
+                padding-bottom: 30px;
+            }
+            &-title {
+                font-size: 16px;
+                line-height: 18px;
+                height: 36px;
+            }
+            &-desc {
+                font-size: 10.7px;
+                line-height: 14px;
+                height: 28px;
+                margin-top: 5px;
+            }
+            &-date {
+                margin-top: 30px;
+                font-size: 9.1px;
+            }
+            &-link {
+                width: 110px;
+                height: 27px;
+                font-size: 8.3px;
+            }
+        }
+        &__content {
+            margin-top: 16px;
+            padding-top: 17px;
+        }
+    }
+    .blog-theme {
+        @include wrap;
+        &__title {
+            font-size: 12px;
+            width: 100%;
+            margin-bottom: 14px;
+        }
+        &__item {
+            height: 26px;
+            padding: 0 15px;
+            font-size: 9px;
+            margin-right: 9px;
+            margin-bottom: 4px;
+        }
+    }
+}

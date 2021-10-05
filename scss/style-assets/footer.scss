@@ -1,0 +1,315 @@
+.footer {
+    & a {
+        &:hover {
+            color: #c5d5e7;
+        }
+    }
+    &__top {
+        background-repeat: repeat-x;
+        background-position: left top;
+        background-image: url(../images/flower_bg2.png);
+        padding-bottom: 20px;
+        background-color: #004b9b;
+        padding-top: 77px;
+        &-inner {
+            @include flex;
+            // @include j-c;
+        }
+    }
+    &__title {
+        margin-bottom: 15px;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+    &__address {
+        font-size: 14px;
+        font-weight: 500;
+        color: #ffffff;
+        &:hover {
+            color: #c5d5e7;
+        }
+        &-hint,
+        &-time {
+            font-size: 12px;
+            margin-top: 8px;
+            font-weight: 400;
+            color: #fff;
+            opacity: 0.72;
+        }
+        &-time {
+            margin-top: 16px;
+        }
+    }
+    &__phones {
+        @include flex;
+        @include al-i(center);
+        margin-top: 23px;
+    }
+    &__phone {
+        @include flex;
+        @include al-i(center);
+        font-size: 18px;
+        font-weight: 500;
+        color: #fff;
+        margin-right: 16px;
+    }
+    &__whatsapp {
+        font-size: 11px;
+        font-weight: 400;
+        color: #fff;
+        @include flex;
+        @include al-i(center);
+        & svg {
+            width: 13px;
+            height: 13px;
+            margin-right: 8px;
+        }
+        & .cls-1 {
+            fill: #fff;
+        }
+        &:hover {
+            color: #c5d5e7;
+            & .cls-1 {
+                fill: #c5d5e7;
+            }
+        }
+    }
+    &__mail {
+        font-size: 14px;
+        margin-top: 24px;
+        font-weight: 400;
+        color: #ffffff;
+        display: block;
+    }
+    &__protect {
+        font-size: 10px;
+        line-height: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        margin-top: 34px;
+    }
+    &__by {
+        font-size: 10px;
+        font-weight: 400;
+        color: #abbad4;
+        margin-top: 18px;
+        & a {
+            color: #ffffff;
+        }
+    }
+    &__col {
+        &:first-child {
+            position: relative;
+            margin-right: 105px;
+        }
+        &:nth-child(2) {
+            margin-right: 97px;
+        }
+    }
+    &__instagram {
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        background-color: #004b9b;
+        border: 1px solid #3174bc;
+        border-radius: 2px;
+        @include flex;
+        justify-content: center;
+        @include al-i(center);
+        right: -58px;
+        top: 37px;
+        & svg {
+            width: 17px;
+            height: 17px;
+        }
+        & .cls-1 {
+            fill: #fff;
+        }
+        &:hover {
+            background-color: rgba(#fff, 0.3);
+        }
+    }
+    &__items {
+        @include flex;
+        &-col:first-child {
+            margin-right: 64px;
+        }
+    }
+    &__item {
+        font-size: 13px;
+        line-height: 30px;
+        font-weight: 400;
+        color: #c5d5e7;
+        display: block;
+        &:hover {
+            color: #ffffff;
+        }
+    }
+    &__pay {
+        margin-top: 30px;
+        @include flex;
+        @include al-i(center);
+        &-title {
+            font-size: 12px;
+            font-weight: 500;
+            color: #ffffff;
+            margin-right: 33px;
+        }
+    }
+    &__bottom {
+        padding: 14px 0;
+        background-color: #014083;
+    }
+    &__agree {
+        display: block;
+        text-align: center;
+        font-size: 10px;
+        line-height: 14px;
+        font-weight: 400;
+        color: #ffffff;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .footer {
+        &__items {
+            &-col:first-child {
+                margin-right: 35px;
+            }
+        }
+        &__pay {
+            &-title {
+                margin-right: 15px;
+            }
+        }
+        &__col {
+            &:first-child {
+                margin-right: 75px;
+            }
+            &:nth-child(2) {
+                margin-right: 60px;
+            }
+        }
+        &__instagram {
+            right: -45px;
+        }
+        &__agree {
+            font-size: 9px;
+            & br {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer {
+        &__top {
+            padding-top: 50px;
+            padding-bottom: 0;
+            &-inner {
+                display: block;
+                padding-bottom: 95px;
+                position: relative;
+            }
+        }
+        &__col {
+            &:nth-child(1) {
+                position: static;
+            }
+            &:nth-child(2) {
+                & .footer__items,
+                & .footer__title {
+                    display: none;
+                }
+            }
+            &:nth-child(3) {
+                display: none;
+            }
+        }
+        &__title {
+            margin-bottom: 21px;
+        }
+        &__address {
+            &-time {
+                margin-top: 14px;
+            }
+        }
+        &__mail {
+            margin-top: 17px;
+        }
+        &__pay {
+            margin-top: 14px;
+        }
+        &__by {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+        }
+        &__protect {
+            left: 0;
+            bottom: 43px;
+            position: absolute;
+        }
+        &__instagram {
+            right: unset;
+            left: 240px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        &__top {
+            background-size: auto 22px;
+            background-position: 6px 0;
+            padding-top: 43px;
+            &-inner {
+                padding-bottom: 81px;
+            }
+        }
+        &__title {
+            font-size: 12px;
+        }
+        &__phone {
+            font-size: 16px;
+            margin-right: 14px;
+        }
+        &__whatsapp {
+            font-size: 11px;
+            & svg {
+                width: 13px;
+                height: 13px;
+                margin-right: 8px;
+            }
+        }
+        &__mail {
+            font-size: 12px;
+        }
+        &__pay {
+            &-title {
+                font-size: 10px;
+                margin-right: 16px;
+                white-space: nowrap;
+            }
+            & img {
+                width: 158px;
+            }
+        }
+        &__col {
+            margin-right: 0 !important;
+        }
+        &__protect {
+            opacity: 0.67;
+            font-size: 8px;
+            line-height: 12px;
+        }
+        &__agree {
+            font-size: 8px;
+            line-height: 12px;
+            opacity: 0.67;
+        }
+    }
+}

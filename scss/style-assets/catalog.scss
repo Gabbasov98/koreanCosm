@@ -1,0 +1,243 @@
+.catalog-page {
+    margin-top: 37px;
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    &__item {
+        height: 261px;
+        position: relative;
+        background-size: 100% 100%;
+        background-color: rgba(0, 96, 198, 0.22);
+        transition: all 0s;
+        &:hover {
+            & .catalog-page__item-title {
+                opacity: 0.9;
+                background-color: #004b9b;
+                color: #fff;
+            }
+        }
+        &:nth-child(1) {
+            // mix-blend-mode: luminosity;
+            background-image: url(../images/catalog1-bw.jpg);
+            &:hover {
+                background-image: url(../images/catalog1.jpg);
+            }
+        }
+        &:nth-child(2) {
+            background-image: url(../images/catalog2-bw.jpg);
+            &:hover {
+                background-image: url(../images/catalog2.jpg);
+            }
+        }
+        &:nth-child(3) {
+            background-image: url(../images/catalog3-bw.jpg);
+            &:hover {
+                background-image: url(../images/catalog3.jpg);
+            }
+        }
+        &:nth-child(4) {
+            background-image: url(../images/catalog4-bw.jpg);
+            &:hover {
+                background-image: url(../images/catalog4.jpg);
+            }
+        }
+        &:nth-child(5) {
+            background-image: url(../images/catalog5-bw.jpg);
+            &:hover {
+                background-image: url(../images/catalog5.jpg);
+            }
+        }
+        &:nth-child(6) {
+            background-image: url(../images/catalog6-bw.jpg);
+            &:hover {
+                background-image: url(../images/catalog6.jpg);
+            }
+        }
+        &:nth-child(7) {
+            background-image: url(../images/catalog7-bw.jpg);
+            &:hover {
+                background-image: url(../images/catalog7.jpg);
+            }
+        }
+        &:nth-child(8) {
+            background-image: url(../images/catalog8-bw.jpg);
+            &:hover {
+                background-image: url(../images/catalog8.jpg);
+            }
+        }
+        &-title {
+            padding: 0 40px 0 25px;
+            height: 54px;
+            opacity: 0.7;
+            background-color: #000000;
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 600;
+            color: #ffffff;
+            @include flex;
+            @include al-i(center);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transition: all .3s;
+        }
+    }
+}
+
+.catalog-banners {
+    background-image: url(../images/wave.png);
+    background-repeat: repeat-x;
+    background-size: auto 61px;
+    background-position: left bottom;
+    padding-bottom: 102px;
+    margin-top: 42px;
+    &__items {
+        @include flex;
+        @include j-c;
+        @include al-i(center);
+    }
+    &__item {
+        width: calc(33.33% - 30px);
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(#fff, 0.3);
+            left: 0;
+            top: 0;
+            opacity: 0;
+            transition: all .3s;
+        }
+        &:hover {
+            &:after {
+                opacity: 1;
+            }
+        }
+        & img {
+            width: 100%;
+        }
+    }
+}
+
+.collection--catalog {
+    background-image: url(../images/flower5.png);
+    background-position: 0 0;
+    padding-top: 91px;
+    padding-bottom: 51px;
+    & .collection__top {
+        @include flex;
+        @include j-c;
+        @include al-i(center);
+    }
+    & .collection__title {
+        font-size: 30px;
+        line-height: 34px;
+        font-weight: 700;
+        color: #19181f;
+        text-align: left;
+        letter-spacing: 0;
+        & span {
+            color: #004b9b;
+        }
+    }
+    & .swiper-button-next,
+    & .swiper-button-prev {
+        position: static;
+        margin-left: 11px;
+        margin-right: 0;
+    }
+    & .collection__buttons {
+        @include flex;
+        @include al-i(center);
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .catalog-page {
+        &__items {
+            gap: 10px;
+        }
+        &__item {
+            height: 235px;
+            &-title {
+                padding: 0 25px 0 15px;
+                font-size: 15px;
+            }
+        }
+    }
+    .catalog-banners {
+        &__item {
+            width: calc(33.33% - 10px);
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .catalog-page {
+        margin-top: 22px;
+        &__items {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+    .catalog-banners {
+        margin-top: 18px;
+        &__items {
+            display: block;
+        }
+        &__item {
+            width: 100%;
+            display: block;
+            &:not(:last-child) {
+                margin-bottom: 7px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .catalog-page {
+        &__items {
+            grid-template-columns: 1fr 1fr;
+        }
+        &__item {
+            height: 220px;
+            &-title {
+                padding-left: 15px;
+                padding-right: 18px;
+                font-size: 12px;
+                height: 29px;
+            }
+        }
+    }
+    .catalog-banners {
+        padding-bottom: 61px;
+        background-size: auto 33px;
+    }
+    .collection--catalog {
+        background-size: auto 26px;
+        padding-top: 55px;
+        padding-bottom: 31px;
+        & .collection__title {
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.4px;
+            & span {
+                display: block;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .catalog-page {
+        &__item {
+            height: 170px;
+        }
+    }
+}

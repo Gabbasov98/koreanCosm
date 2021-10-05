@@ -1,0 +1,157 @@
+.text {
+    margin-top: 34px;
+    color: #000;
+    padding-bottom: 57px;
+    padding-top: 36px;
+    border-top: 1px solid rgba(213, 218, 224, 0.6);
+    &__p,
+    & p {
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
+        & a {
+            color: #004a9b;
+            text-decoration: underline;
+            &:hover {
+                background-color: #004b9b;
+                color: #fff;
+            }
+        }
+        &.mt-8 {
+            margin-top: 8px;
+        }
+        &.mt-20 {
+            margin-top: 20px;
+        }
+        &.mt-12 {
+            margin-top: 12px;
+        }
+    }
+    &__h2,
+    & h2 {
+        font-size: 22px;
+        line-height: 40px;
+        font-weight: 600;
+        margin: 4px 0 9px;
+    }
+    &__h3,
+    & h3 {
+        font-size: 18px;
+        line-height: 34px;
+        font-weight: 600;
+        margin: 4px 0 3px;
+    }
+    &__h4,
+    & h4 {
+        font-size: 16px;
+        line-height: 32px;
+        font-weight: 600;
+        margin: 4px 0;
+    }
+    &__ol,
+    & ol {
+        &-title,
+        & p {
+            margin-top: 6px;
+            font-size: 16px;
+            line-height: 25px;
+            font-weight: 500;
+            margin-bottom: 2px;
+        }
+        &-item,
+        & li {
+            line-height: 26px;
+            font-size: 14px;
+        }
+    }
+    &__ul,
+    & ul {
+        &-title,
+        & p {
+            margin-top: 6px;
+            font-size: 16px;
+            line-height: 25px;
+            font-weight: 500;
+            margin-bottom: 2px;
+        }
+        &-item,
+        & li {
+            line-height: 26px;
+            font-size: 14px;
+            @include flex;
+            @include al-i(center);
+            & img {
+                width: 6px;
+                height: 6px;
+                margin-right: 12px;
+            }
+        }
+    }
+    &__img {
+        margin-top: 19px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text {
+        margin-top: 16px;
+        padding-top: 18px;
+        padding-bottom: 35px;
+        &__p,
+        & p {
+            font-size: 12px;
+            line-height: 18px;
+            & span {
+                text-decoration: underline;
+                color: #0c94c6;
+            }
+            &.mt-20 {
+                margin-top: 10px;
+            }
+        }
+        &__h2,
+        & h2 {
+            font-size: 18px;
+            line-height: 22px;
+        }
+        &__h3,
+        & h3 {
+            font-size: 16px;
+            line-height: 19px;
+        }
+        &__h4,
+        & h4 {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        &__ol,
+        & ol {
+            &-title {
+                font-size: 13px;
+                font-size: 100%;
+            }
+            &-item,
+            & li {
+                line-height: 15px;
+                font-size: 11px;
+                margin-top: 7px;
+            }
+        }
+        &__ul,
+        & ul {
+            &-title {
+                font-size: 13px;
+                font-size: 100%;
+            }
+            &-item,
+            & li {
+                line-height: 15px;
+                font-size: 11px;
+                margin-bottom: 7px;
+            }
+        }
+        &__img {
+            max-width: 100%;
+        }
+    }
+}

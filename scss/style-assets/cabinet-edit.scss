@@ -1,0 +1,225 @@
+.cabinet-edit {
+    background-color: #fff;
+    padding: 40px 60px 60px;
+    background-image: url(../images/wave.png);
+    background-repeat: repeat-x;
+    background-size: auto 35px;
+    background-position: left bottom;
+    margin-bottom: 46px;
+    &__inputs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 66px;
+        row-gap: 22px;
+    }
+    &__input {
+        &:nth-child(4) {
+            grid-row: 3/4;
+            grid-column: 1/2;
+        }
+        &:nth-child(5) {
+            grid-row: 3/4;
+            grid-column: 2/3;
+        }
+        & label {
+            font-size: 14px;
+            display: block;
+            font-weight: 400;
+            color: #121212;
+            margin-bottom: 14px;
+        }
+        & input {
+            height: 44px;
+            background-color: #ffffff;
+            border: 1px solid #dbe3ec;
+            height: 40px;
+            width: 100%;
+            font-size: 15px;
+            padding: 0 18px;
+            font-weight: 400;
+            color: #121212;
+            &:focus,
+            &:active {
+                border: 1px solid #004b9b;
+            }
+        }
+    }
+    &__buttons {
+        @include flex;
+        @include al-i(center);
+        margin-top: 30px;
+        padding-top: 28px;
+        border-top: 1px solid #dbe3ec;
+        position: relative;
+        padding-bottom: 39px;
+    }
+    &__save {
+        width: 290px;
+        height: 56px;
+        background-color: #004b9b;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #ffffff;
+        &:hover {
+            background-color: #006adc;
+        }
+    }
+    &__cancel {
+        margin-left: 30px;
+        width: 124px;
+        height: 44px;
+        background-color: #ffffff;
+        border: 1px solid #cacaca;
+        border-radius: 3px;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #8a8a8a;
+        &:hover {
+            border: 1px solid #003b79;
+            color: #003b79;
+        }
+    }
+    &__hint {
+        font-size: 12px;
+        font-weight: 400;
+        color: #121212;
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+    }
+}
+
+.cabinet-pass {
+    &__inputs {
+        row-gap: 30px;
+        position: relative;
+        padding-bottom: 32px;
+        &:after {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            background: #dbe3ec;
+            top: 100px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+        }
+    }
+    &__input {
+        position: relative;
+        &:nth-child(1) {
+            grid-column: 1/2;
+            padding-bottom: 34px;
+        }
+        &:nth-child(2) {
+            grid-row: 2/3;
+            grid-column: 1/2;
+        }
+        &:nth-child(3) {
+            grid-row: 2/3;
+            grid-column: 2/3;
+            margin-bottom: 0;
+        }
+    }
+    &__hint {
+        font-size: 12px;
+        left: 0;
+        bottom: 0;
+        font-weight: 400;
+        color: #6c6c6c;
+        position: absolute;
+        width: 100%;
+    }
+    &__toggle-btn {
+        width: 14px;
+        height: 14px;
+        background-image: url(../images/svg/password-view.svg);
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 17px;
+        top: 40px;
+    }
+    &__toggle-btn--show {
+        background-image: url(../images/svg/password-view2.svg);
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .cabinet-edit {
+        padding-left: 30px;
+        padding-right: 30px;
+        &__inputs {
+            column-gap: 30px;
+            row-gap: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cabinet-edit {
+        padding: 27px 24px 48px;
+        background-size: auto 21px;
+        margin-bottom: 28px;
+        &__inputs {
+            display: block;
+        }
+        &__input {
+            margin-bottom: 19px;
+            &:nth-child(5) {
+                margin-bottom: 0;
+            }
+            & label {
+                font-size: 12px;
+            }
+            & input {
+                padding: 0 13px;
+                height: 34px;
+                font-size: 14px;
+            }
+        }
+        &__buttons {
+            margin-top: 27px;
+            padding-top: 23px;
+            padding-bottom: 0;
+            @include wrap;
+        }
+        &__save {
+            width: 100%;
+            height: 47px;
+            font-size: 12px;
+        }
+        &__cancel {
+            width: 88px;
+            height: 31px;
+            margin-top: 23px;
+            font-size: 10px;
+            margin-left: 0;
+        }
+        &__hint {
+            right: unset;
+            left: 115px;
+            bottom: 3px;
+            font-size: 10px;
+            line-height: 14px;
+            width: 120px;
+        }
+    }
+    .cabinet-pass {
+        &__inputs {
+            padding-bottom: 15px;
+        }
+        &__hint {
+            font-size: 10px;
+            bottom: -12px;
+        }
+        &__toggle-btn {
+            right: 10px;
+            top: 37px;
+        }
+    }
+}
